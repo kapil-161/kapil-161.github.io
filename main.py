@@ -57,7 +57,7 @@ def index():
 
         district_map, gapa_napa_map, district_buffer, gapa_napa_buffer = create_maps(nepal, dist1, selected_district, selected_gapa_napas)
 
-        return render_template('index.html', 
+        return render_template('index1.html', 
                                district_map=district_map,
                                gapa_napa_map=gapa_napa_map,
                                districts=districts,
