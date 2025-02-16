@@ -378,254 +378,191 @@
 <!-- END SECTION SERVICES -->
 
 <!-- START SECTION PORTFOLIO -->
-<section id="portfolio" class="pb_70 bg_black4">
-    <div class="container">
-    	<div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-7 col-md-9 text-center">
-                <div class="heading_s1 heading_light animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-                    <h2>My Portfolio</h2>
+<section id="portfolio" class="pb-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-white mb-4">My Portfolio</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto">Showcasing my expertise in data analysis, visualization, and training solutions</p>
+        </div>
+
+        <!-- Small Divider (from original) -->
+        <div class="w-full h-8"></div>
+
+        <!-- Filter Tabs -->
+        <div class="flex justify-center mb-12">
+            <ul class="flex flex-wrap gap-4" id="portfolio-filter">
+                <li><button class="px-6 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition active" data-filter="*">All Projects</button></li>
+                <li><button class="px-6 py-2 text-white bg-gray-700 rounded-full hover:bg-blue-600 transition" data-filter=".data-analysis">Data Analysis</button></li>
+                <li><button class="px-6 py-2 text-white bg-gray-700 rounded-full hover:bg-blue-600 transition" data-filter=".visualization">Mapping & Visualization</button></li>
+                <li><button class="px-6 py-2 text-white bg-gray-700 rounded-full hover:bg-blue-600 transition" data-filter=".training">Training</button></li>
+            </ul>
+        </div>
+
+        <!-- Portfolio Grid with Masonry -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 masonry-grid" id="portfolio-items">
+            <!-- Portfolio Item 1 - Standard -->
+            <div class="portfolio-item visualization masonry-item">
+                <div class="relative group overflow-hidden rounded-lg">
+                    <img src="assets/images/portfolio_item_small1.jpg" alt="Geospatial Visualization Project" class="w-full h-64 object-cover transition duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Interactive Map Visualization</h3>
+                            <p class="text-gray-200 mb-4">Geographic data visualization using modern mapping libraries</p>
+                            <div class="flex gap-4">
+                                <a href="assets/images/portfolio_item1.jpg" class="text-white hover:text-blue-400 transition lightbox">
+                                    <i class="ion-image text-xl"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-blue-400 transition" data-modal-target="project-details">
+                                    <i class="ion-plus text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="animation text-white" data-animation="fadeInUp" data-animation-delay="0.03s"></p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="cleafix small_divider"></div>
-            </div>
-        </div>
-        <div class="row mb-4 mb-md-5">
-            <div class="col-md-12 text-center">
-                <ul class="list_none grid_filter filter_tab1 filter_white animation" data-animation="fadeInUp" data-animation-delay="0.04s">
-                    <li><a href="#" class="current" data-filter="*">all</a></li>
-                    <li><a href="#" data-filter=".brands">Data analysis</a></li>
-                    <li><a href="#" data-filter=".web-design">Mapping and plotting </a></li>
-                    <li><a href="#" data-filter=".Training">Training</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="grid_container gutter_medium work_col3 portfolio_gallery portfolio_style1 animation masonry" data-animation="fadeInUp" data-animation-delay="0.04s">
-                	<li class="grid-sizer"></li>
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item web-design">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="assets/images/portfolio_item_small1.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-                                        <a href="assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#pr_modal"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Mapping and plotting</a></h5>
-                                    <p>Mapping and plotting</p>
-                              </div>
+
+            <!-- Portfolio Item 2 - With Carousel -->
+            <div class="portfolio-item data-analysis visualization masonry-item">
+                <div class="relative group overflow-hidden rounded-lg">
+                    <div class="carousel-slider">
+                        <div class="carousel-item">
+                            <img src="assets/images/portfolio_item_small3.jpg" alt="Data Analysis Project" class="w-full h-64 object-cover">
                         </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands web-design Training">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="assets/images/portfolio_item_small8.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-                                        <a href="assets/images/portfolio_item8.jpg" class="image_popup"><i class="ion-image"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#pr_modal"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal"></a></h5>
-                                    <p>data analysis, Mapping and plotting</p>
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands web-design">
-                        <div class="portfolio_item">
-                        	<div class="carousel_slider owl-carousel owl-theme dots_white" data-autoplay="true" data-loop="false" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3000" data-items="1">
-                                <a href="#" class="image_link">
-                                    <img src="assets/images/portfolio_item_small3.jpg" alt="image">
-                                </a>
-                                <a href="#" class="image_link">
-                                    <img src="assets/images/portfolio_item_small4.jpg" alt="image">
-                                </a>
-                         	</div>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-                                        <a href="assets/images/portfolio_item3.jpg" class="image_popup"><i class="ion-images"></i></a>
-                                        <a href="assets/images/portfolio_item4.jpg" class="image_popup d-none"></a>
-                                        <a href="#" data-toggle="modal" data-target="#pr_modal"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal"></a></h5>
-                                    <p>data analysis, Mapping and plotting</p>
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands web-design Training">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="assets/images/portfolio_item_small2.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-                                        <a href="assets/images/portfolio_item2.jpg" class="image_popup"><i class="ion-image"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#pr_modal"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal"></a></h5>
-                                    <p>data analysis, Mapping and plotting</p>
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands Training">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="assets/images/portfolio_item_small9.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-                                        <a href="assets/images/portfolio_item9.jpg" class="image_popup"><i class="ion-image"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#pr_modal"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal"></a></h5>
-                                    <p>data analysis</p>
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands Training">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="assets/images/portfolio_item_small5.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-                                        <a href="assets/images/portfolio_item5.jpg" class="image_popup"><i class="ion-image"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#pr_modal"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal"></a></h5>
-                                    <p>data analysis</p>
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands web-design Training">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="assets/images/portfolio_item_small11.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-                                        <a href="assets/images/portfolio_item11.jpg" class="image_popup"><i class="ion-image"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#pr_modal"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Traning</a></h5>
-                                    <p> Training</p>
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands web-design Training">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="assets/images/portfolio_item_small10.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-                                        <a href="assets/images/portfolio_item10.jpg" class="image_popup"><i class="ion-image"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#pr_modal"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Training</a></h5>
-                                    <p>Training</p>
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                     <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands web-design Training">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="assets/images/portfolio_item_small7.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-                                        <a href="assets/images/portfolio_item7.jpg" class="image_popup"><i class="ion-image"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#pr_modal"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">data analysis</a></h5>
-                                    <p>data analysis, Mapping and plotting</p>
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio_modal modal fade" id="pr_modal">
-    	<div class="modal-dialog modal-xl modal-dialog-centered">	
-        	<div class="modal-content bg_black3 scroll_white">
-            	<div class="modal-body">
-                	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">×</span>
-                    </button>
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="carousel_slider owl-carousel owl-theme" data-margin="20" data-dots="false" data-loop="true" data-nav="true" data-autoplay="true" data-items="1">
-                                <div class="item">
-                                    <img src="assets/images/portfolio_img1.jpg" alt="portfolio_img1"/>
-                                </div>
-                                <div class="item">
-                                    <img src="assets/images/portfolio_img2.jpg" alt="portfolio_img2"/>
-                                </div>
-                                <div class="item">
-                                    <img src="assets/images/portfolio_img3.jpg" alt="portfolio_img3"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <ul class="list_none portfolio_info_box pr_info_text_white">
-                                <li><span class="text-uppercase">CLIENT</span>Kapil bhattarai</li>
-                                <li><span class="text-uppercase">Date</span>Aprile 2018</li>
-                                <li><span class="text-uppercase">Category</span>Design, data analysis</li>
-                                <li><span class="text-uppercase">PROJECT link</span>www.sitename.com</li>
-                                <li><span class="text-uppercase">SHARE </span>
-                                    <ul class="list_none social_icons border_social rounded_social social_white">
-                                        <li><a href="https://www.facebook.com/kapilbhattarai161/" class="sc_facebook"><i class="ion-social-facebook"></i></a></li>
-                                        <li><a href="https://twitter.com/KD_Bhattarai" class="sc_twitter"><i class="ion-social-twitter"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/kapil-bhattarai-792417192/" class="sc_linkedin"><i class="ion-social-linkedin"></i></a></li>
-                                        <li><a href="https://www.youtube.com/channel/UC5MazVlH_vjJHxolQekoGzQ" class="sc_youtube"><i class="ion-social-youtube-outline"></i></a></li>
-                                        <li><a href="https://github.com/kapil-161" class="sc_github"><i class="ion-social-github"></i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <div class="carousel-item">
+                            <img src="assets/images/portfolio_item_small4.jpg" alt="Data Analysis Project" class="w-full h-64 object-cover">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="pf_content text_white">	
-                                <div class="heading_s1">
-                                    <h2></h2>
-                                </div>
-                                <p></p>
-                                <p></p>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Data Analysis Dashboard</h3>
+                            <p class="text-gray-200 mb-4">Interactive dashboard with real-time data analysis</p>
+                            <div class="flex gap-4">
+                                <a href="assets/images/portfolio_item3.jpg" class="text-white hover:text-blue-400 transition lightbox">
+                                    <i class="ion-images text-xl"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-blue-400 transition" data-modal-target="project-details">
+                                    <i class="ion-plus text-xl"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-            	</div>
+                </div>
+            </div>
+
+            <!-- Add more portfolio items here -->
+        </div>
+    </div>
+
+    <!-- Enhanced Modal with Carousel -->
+    <div id="project-details" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black/75"></div>
+        <div class="relative max-w-6xl mx-auto mt-10 bg-gray-900 rounded-lg overflow-hidden">
+            <button class="absolute top-4 right-4 text-white hover:text-gray-300" data-close-modal>
+                <i class="ion-close-round text-xl"></i>
+            </button>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
+                <div class="space-y-4">
+                    <!-- Main Carousel -->
+                    <div class="carousel-slider modal-carousel">
+                        <div class="carousel-item">
+                            <img src="assets/images/portfolio_img1.jpg" alt="Project Preview" class="w-full rounded-lg">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/portfolio_img2.jpg" alt="Project Preview" class="w-full rounded-lg">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/portfolio_img3.jpg" alt="Project Preview" class="w-full rounded-lg">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-white">
+                    <h3 class="text-2xl font-bold mb-4">Project Details</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="text-sm text-gray-400">CLIENT</h4>
+                            <p class="text-lg">Kapil Bhattarai</p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm text-gray-400">CATEGORY</h4>
+                            <p class="text-lg">Data Analysis, Visualization</p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm text-gray-400">DATE</h4>
+                            <p class="text-lg">April 2023</p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm text-gray-400">PROJECT LINK</h4>
+                            <a href="#" class="text-blue-400 hover:text-blue-300">www.sitename.com</a>
+                        </div>
+                        <div>
+                            <h4 class="text-sm text-gray-400">SHARE</h4>
+                            <div class="flex gap-4 mt-2">
+                                <a href="https://www.facebook.com/kapilbhattarai161/" class="text-white hover:text-blue-400 transition">
+                                    <i class="ion-social-facebook text-xl"></i>
+                                </a>
+                                <a href="https://twitter.com/KD_Bhattarai" class="text-white hover:text-blue-400 transition">
+                                    <i class="ion-social-twitter text-xl"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/kapil-bhattarai-792417192/" class="text-white hover:text-blue-400 transition">
+                                    <i class="ion-social-linkedin text-xl"></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UC5MazVlH_vjJHxolQekoGzQ" class="text-white hover:text-blue-400 transition">
+                                    <i class="ion-social-youtube-outline text-xl"></i>
+                                </a>
+                                <a href="https://github.com/kapil-161" class="text-white hover:text-blue-400 transition">
+                                    <i class="ion-social-github text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Description -->
+                    <div class="mt-8">
+                        <h4 class="text-sm text-gray-400 mb-2">PROJECT DESCRIPTION</h4>
+                        <div class="prose prose-invert">
+                            <p class="text-gray-300">Detailed project description goes here...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Required CSS/JS for functionality -->
+    <style>
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 2rem;
+            grid-auto-flow: dense;
+        }
+    </style>
+
+    <script>
+        // Initialize Masonry layout
+        document.addEventListener('DOMContentLoaded', function() {
+            const msnry = new Masonry('.masonry-grid', {
+                itemSelector: '.masonry-item',
+                columnWidth: '.masonry-item',
+                percentPosition: true
+            });
+
+            // Initialize carousels
+            const carousels = document.querySelectorAll('.carousel-slider');
+            carousels.forEach(carousel => {
+                new Carousel(carousel, {
+                    autoplay: true,
+                    loop: true,
+                    navigation: true,
+                    pagination: true
+                });
+            });
+
+            // Initialize lightbox
+            const lightbox = new Lightbox('.lightbox');
+        });
+    </script>
 </section>
-<!-- END SECTION PORTFOLIO -->
 
 <!-- STARTTraining and certificates -->
 <section id="Training" class="bg_black2">
