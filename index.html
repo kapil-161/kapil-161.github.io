@@ -732,8 +732,7 @@
                         <hr>
                         <p> <span class="text_default">3.</span> Student performance test using Logit and Probit model.</p>
                         <p> <span class="text_default">4.</span> Real-time disease identification application. <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7130025023003639809?compact=1" height="399" width="360" frameborder="0" allowfullscreen="" title="Embedded post"></iframe></p>
-			<p> <span class="text_default">5.</span> <a href="https://kapil161.pythonanywhere.com/">NEPSE Stock Price Prediction</a>.</p>
-			<p> <span class="text_default">6.</span> <a href="https://kapil811.pythonanywhere.com/">Stock Analysis Dashboard</a>.</p>
+			<p> <span class="text_default">5.</span> <a href="https://z6qvuo-kapil-bhattarai.shinyapps.io/nepseshiny/">Stock Analysis Dashboard</a>.</p>
 
                     </div>
                 </div>
@@ -807,7 +806,7 @@
     	<div class="row">
         	<div class="col-md-6">
             	<div class="field_form form_style2 rounded_input animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-                    <form method="post" name="enq">
+                    <form method="post" name="enq" id="contactForm">
                     <div class="row">
                         <div class="form-group col-12">
                             <input required="required" placeholder="Enter Name *" id="first-name" class="form-control" name="name" type="text">
@@ -876,13 +875,14 @@
                     <h6 class="widget_title">Subscribe Newsletter</h6>
                     <p></p>
                     <div class="newsletter_form">
-                        <form> 
+                        <form id="newsletterForm"> 
                             <div class="rounded_input">
-                            	<input type="text" required="" placeholder="Enter Email Address">
+                            	<input type="email" id="newsletterEmail" required="" placeholder="Enter Email Address" name="email">
                             </div>
                             <button type="submit" title="Subscribe" class="btn btn-default btn-radius btn-aylen" name="submit" value="Submit">
                             	subscribe
                             </button>
+                            <div id="newsletterMessage" class="newsletter-message" style="margin-top: 10px; display: none;"></div>
                         </form>
                     </div>
                 </div>
@@ -941,6 +941,168 @@
 <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <!-- scripts js --> 
 <script src="assets/js/scripts.js"></script>
+
+<!-- Newsletter Subscription Script -->
+<script>
+(function() {
+    // Newsletter form handler
+    const newsletterForm = document.getElementById('newsletterForm');
+    const newsletterMessage = document.getElementById('newsletterMessage');
+    
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('newsletterEmail').value;
+            const submitButton = newsletterForm.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            
+            // Disable button and show loading
+            submitButton.disabled = true;
+            submitButton.textContent = 'Subscribing...';
+            newsletterMessage.style.display = 'none';
+            
+            // Option 1: Using EmailJS (requires setup - see instructions below)
+            // Uncomment and configure if using EmailJS:
+            /*
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                .then(function() {
+                    showNewsletterMessage('Thank you! You have been subscribed successfully.', 'success');
+                    newsletterForm.reset();
+                }, function(error) {
+                    showNewsletterMessage('Sorry, there was an error. Please try again later.', 'error');
+                })
+                .finally(function() {
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalText;
+                });
+            */
+            
+            // Option 2: Using Formspree (simple, no API keys needed)
+            fetch('https://formspree.io/f/mldqpodg', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: email,
+                    _subject: 'Newsletter Subscription',
+                    _format: 'plain'
+                })
+            })
+            .then(response => {
+                if (response.ok) {
+                    showNewsletterMessage('Thank you! You have been subscribed successfully.', 'success');
+                    newsletterForm.reset();
+                } else {
+                    throw new Error('Subscription failed');
+                }
+            })
+            .catch(error => {
+                showNewsletterMessage('Sorry, there was an error. Please try again later.', 'error');
+            })
+            .finally(function() {
+                submitButton.disabled = false;
+                submitButton.textContent = originalText;
+            });
+        });
+    }
+    
+    function showNewsletterMessage(message, type) {
+        newsletterMessage.textContent = message;
+        newsletterMessage.style.display = 'block';
+        newsletterMessage.style.color = type === 'success' ? '#4CAF50' : '#f44336';
+        newsletterMessage.style.fontSize = '14px';
+        newsletterMessage.style.textAlign = 'center';
+        
+        // Hide message after 5 seconds
+        setTimeout(function() {
+            newsletterMessage.style.display = 'none';
+        }, 5000);
+    }
+})();
+
+// Contact Form Handler
+(function() {
+    const contactForm = document.getElementById('contactForm');
+    const alertMsg = document.getElementById('alert-msg');
+    const submitButton = document.getElementById('submitButton');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('first-name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('description').value;
+            const originalText = submitButton.textContent;
+            
+            // Validate required fields
+            if (!name || !email || !message) {
+                showContactMessage('Please fill in all required fields.', 'error');
+                return;
+            }
+            
+            // Disable button and show loading
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            alertMsg.style.display = 'none';
+            
+            // Send to Formspree
+            fetch('https://formspree.io/f/mldqpodg', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    subject: subject || 'Contact Form Submission',
+                    message: message,
+                    _subject: 'New Contact Form Submission - ' + (subject || 'No Subject'),
+                    _format: 'plain'
+                })
+            })
+            .then(response => {
+                if (response.ok) {
+                    showContactMessage('Thank you! Your message has been sent successfully.', 'success');
+                    contactForm.reset();
+                } else {
+                    throw new Error('Submission failed');
+                }
+            })
+            .catch(error => {
+                showContactMessage('Sorry, there was an error sending your message. Please try again later.', 'error');
+            })
+            .finally(function() {
+                submitButton.disabled = false;
+                submitButton.textContent = originalText;
+            });
+        });
+    }
+    
+    function showContactMessage(message, type) {
+        alertMsg.textContent = message;
+        alertMsg.style.display = 'block';
+        
+        // Remove existing classes
+        alertMsg.classList.remove('alert-msg-success', 'alert-msg-failure');
+        
+        // Add appropriate class
+        if (type === 'success') {
+            alertMsg.classList.add('alert-msg-success');
+            alertMsg.style.color = '#4CAF50';
+        } else {
+            alertMsg.classList.add('alert-msg-failure');
+            alertMsg.style.color = '#f44336';
+        }
+        
+        // Scroll to message
+        alertMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+})();
+</script>
 
 </body>
 </html>
