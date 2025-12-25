@@ -143,7 +143,7 @@
 .circle_bg1 span {
     position: absolute;
     border-radius: 50%;
-    border: 2px solid rgba(39, 226, 120, 0.3);
+    border: 1px solid rgba(39, 226, 120, 0.3);
     animation: rotate 20s linear infinite;
 }
 
