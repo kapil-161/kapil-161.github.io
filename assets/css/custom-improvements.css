@@ -850,12 +850,29 @@ html {
     }
     
     .banner_section .row {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     
     .banner_section .col-xl-6 {
         width: 100%;
         max-width: 100%;
+        order: 0 !important;
+    }
+    
+    .banner_section .image_banner {
+        order: 1;
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
+    
+    .banner_section .banner_content {
+        order: 2;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .banner_section .row.align-items-center {
+        align-items: flex-start !important;
     }
 }
 
