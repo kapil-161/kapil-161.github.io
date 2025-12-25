@@ -331,10 +331,29 @@
     box-shadow: 0 10px 25px rgba(39, 226, 120, 0.4);
 }
 
+/* Reduced Section Spacing */
+section {
+    padding: 50px 0 !important;
+}
+
+section.pb_70 {
+    padding-bottom: 50px !important;
+}
+
+.medium_divider {
+    height: 30px !important;
+    margin: 20px 0 !important;
+}
+
+.small_divider {
+    height: 20px !important;
+    margin: 15px 0 !important;
+}
+
 /* Enhanced Section Spacing */
 .heading_s1 h2 {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .heading_s1 h2:after {
