@@ -5,12 +5,12 @@
 /* HERO */
 .hero {
   position: relative;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, #0f1b3d 0%, #14274E 40%, #0a1a35 100%);
   overflow: hidden;
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) + 2rem);
+  padding-bottom: 4rem;
 }
 
 .heroOverlay {
@@ -75,7 +75,7 @@
 .heroContent {
   position: relative;
   z-index: 2;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .heroGrid {
@@ -143,8 +143,6 @@
 .heroImage {
   display: flex;
   justify-content: center;
-  animation: fadeIn 1s ease 0.3s forwards;
-  opacity: 0;
 }
 
 .heroImageFrame {
