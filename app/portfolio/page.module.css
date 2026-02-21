@@ -1,0 +1,200 @@
+.hero {
+    padding: 10rem 0 4rem;
+    background: linear-gradient(135deg, #14274E, #0f1b3d);
+    text-align: center;
+}
+
+.hero h1 {
+    color: var(--white);
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(13, 115, 119, 0.2);
+    border: 1px solid rgba(13, 115, 119, 0.3);
+    border-radius: 20px;
+    color: var(--deep-teal-light);
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+/* CASE STUDIES */
+.caseStudy {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid var(--border-color);
+    align-items: start;
+}
+
+.caseStudy:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.caseStudy:nth-child(even) {
+    direction: rtl;
+}
+
+.caseStudy:nth-child(even)>* {
+    direction: ltr;
+}
+
+.caseStudyImage {
+    position: relative;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.caseImg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caseBadge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 6px 14px;
+    background: rgba(20, 39, 78, 0.9);
+    color: var(--warm-gold);
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 600;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    backdrop-filter: blur(8px);
+}
+
+.caseStudyContent h3 {
+    margin-bottom: 0.25rem;
+}
+
+.caseLocation {
+    color: var(--deep-teal);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.caseSection {
+    margin-bottom: 1.25rem;
+}
+
+.caseSection h5 {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--deep-teal);
+    margin-bottom: 0.5rem;
+}
+
+.caseSection p {
+    font-size: 0.92rem;
+    margin-bottom: 0;
+}
+
+.toolTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.toolTags span {
+    padding: 3px 10px;
+    background: rgba(13, 115, 119, 0.08);
+    color: var(--deep-teal);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* ADDITIONAL PROJECTS */
+.projectCard {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.projectImage {
+    height: 180px;
+    overflow: hidden;
+}
+
+.projectImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.projectCard:hover .projectImage img {
+    transform: scale(1.05);
+}
+
+.projectContent {
+    padding: 1.25rem;
+}
+
+.projectContent h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.projectContent p {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+}
+
+/* CTA */
+.ctaSection {
+    background: linear-gradient(135deg, var(--deep-teal), var(--deep-teal-light));
+    padding: 5rem 0;
+}
+
+.ctaContent {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.ctaContent h2 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.ctaContent p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .caseStudy {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .caseStudy:nth-child(even) {
+        direction: ltr;
+    }
+}
