@@ -1,16 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import styles from './Header.module.css';
 
 const navLinks = [
-    { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services' },
-    { href: '/portfolio', label: 'Portfolio' },
-    { href: '/blog', label: 'Blog' },
+    { href: '/portfolio', label: 'Work', matchPaths: ['/portfolio', '/services'] },
     { href: '/research', label: 'Research' },
     { href: '/contact', label: 'Contact' },
 ];
@@ -30,10 +27,17 @@ export default function Header() {
         setMenuOpen(false);
     }, [pathname]);
 
+    const handleLogoClick = useCallback((e) => {
+        if (pathname === '/') {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [pathname]);
+
     return (
         <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
             <div className={styles.container}>
-                <Link href="/" className={styles.logo}>
+                <Link href="/" className={styles.logo} onClick={handleLogoClick}>
                     <span className={styles.logoIcon}>KB</span>
                     <span className={styles.logoText}>Kapil Bhattarai</span>
                 </Link>
@@ -49,17 +53,20 @@ export default function Header() {
                 </button>
 
                 <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
-                    {navLinks.map((link) => (
-                        <Link
-                            key={link.href}
-                            href={link.href}
-                            className={`${styles.navLink} ${pathname === link.href ? styles.navLinkActive : ''
-                                }`}
-                        >
-                            {link.label}
-                        </Link>
-                    ))}
-
+                    {navLinks.map((link) => {
+                        const isActive = link.matchPaths
+                            ? link.matchPaths.includes(pathname)
+                            : pathname === link.href;
+                        return (
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                className={`${styles.navLink} ${isActive ? styles.navLinkActive : ''}`}
+                            >
+                                {link.label}
+                            </Link>
+                        );
+                    })}
                 </nav>
             </div>
         </header>

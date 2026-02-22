@@ -30,7 +30,7 @@ export default function HomePage() {
             <div className={styles.heroImage}>
               <div className={styles.heroImageFrame}>
                 <Image
-                  src="/images/my_image2.jpg"
+                  src="/images/my_image2.webp"
                   alt="Kapil Bhattarai - Agricultural Data Scientist"
                   width={420}
                   height={420}
@@ -117,7 +117,7 @@ export default function HomePage() {
           <div className="grid-3">
             <div className={styles.caseCard}>
               <div className={styles.caseImage}>
-                <Image src="/images/portfolio_item1.jpg" alt="Precision Nitrogen Management in Spring Rice" width={400} height={260} />
+                <Image src="/images/portfolio_item1.webp" alt="Precision Nitrogen Management in Spring Rice" width={400} height={260} />
                 <span className={styles.caseBadge}>DSSAT</span>
               </div>
               <div className={styles.caseContent}>
@@ -128,7 +128,7 @@ export default function HomePage() {
             </div>
             <div className={styles.caseCard}>
               <div className={styles.caseImage}>
-                <Image src="/images/gb2_screenshot.jpeg" alt="DSSAT Graphical Visualization GB2" width={400} height={260} />
+                <Image src="/images/gb2_screenshot.webp" alt="DSSAT Graphical Visualization GB2" width={400} height={260} />
                 <span className={styles.caseBadge}>Development</span>
               </div>
               <div className={styles.caseContent}>
@@ -139,7 +139,7 @@ export default function HomePage() {
             </div>
             <div className={styles.caseCard}>
               <div className={styles.caseImage}>
-                <Image src="/images/rogcheck_app.png" alt="Rogcheck - Crop Disease Identification App" width={400} height={260} />
+                <Image src="/images/rogcheck_app.webp" alt="Rogcheck - Crop Disease Identification App" width={400} height={260} />
                 <span className={styles.caseBadge}>Machine Learning</span>
               </div>
               <div className={styles.caseContent}>

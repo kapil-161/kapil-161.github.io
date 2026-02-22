@@ -25,7 +25,7 @@ export default function AboutPage() {
                 <div className="container">
                     <div className={styles.introGrid}>
                         <div className={styles.introImage}>
-                            <Image src="/images/about_img2.jpg" alt="Kapil Bhattarai in the field" width={500} height={600} className={styles.aboutPhoto} />
+                            <Image src="/images/about_img2.webp" alt="Kapil Bhattarai in the field" width={400} height={534} className={styles.aboutPhoto} />
                         </div>
                         <div className={styles.introText}>
                             <h2>My Story</h2>
@@ -178,7 +178,7 @@ export default function AboutPage() {
                     <div className={styles.certCards}>
                         <div className={styles.certCard}>
                             <div className={styles.certImage}>
-                                <Image src="/images/cert_ai_fluency_foundations.jpeg" alt="AI Fluency: Framework & Foundations - Anthropic Certificate" width={600} height={450} className={styles.certPhoto} />
+                                <Image src="/images/cert_ai_fluency_foundations.webp" alt="AI Fluency: Framework & Foundations - Anthropic Certificate" width={800} height={589} className={styles.certPhoto} />
                             </div>
                             <div className={styles.certItem}>
                                 <span className={styles.certBadge}>Anthropic</span>
@@ -188,7 +188,7 @@ export default function AboutPage() {
                         </div>
                         <div className={styles.certCard}>
                             <div className={styles.certImage}>
-                                <Image src="/images/cert_ai_fluency_students.jpeg" alt="AI Fluency for Students - Anthropic Certificate" width={600} height={450} className={styles.certPhoto} />
+                                <Image src="/images/cert_ai_fluency_students.webp" alt="AI Fluency for Students - Anthropic Certificate" width={800} height={608} className={styles.certPhoto} />
                             </div>
                             <div className={styles.certItem}>
                                 <span className={styles.certBadge}>Anthropic</span>
@@ -198,7 +198,7 @@ export default function AboutPage() {
                         </div>
                         <div className={styles.certCard}>
                             <div className={styles.certImage}>
-                                <Image src="/images/cert_dssat_training.jpeg" alt="DSSAT 2025 International Training Program Certificate" width={600} height={450} className={styles.certPhoto} />
+                                <Image src="/images/cert_dssat_training.webp" alt="DSSAT 2025 International Training Program Certificate" width={800} height={618} className={styles.certPhoto} />
                             </div>
                             <div className={styles.certItem}>
                                 <span className={styles.certBadge}>DSSAT</span>

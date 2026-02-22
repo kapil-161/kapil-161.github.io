@@ -95,7 +95,7 @@
   background: rgba(13, 115, 119, 0.2);
   border: 1px solid rgba(13, 115, 119, 0.3);
   border-radius: 20px;
-  color: var(--deep-teal-light);
+  color: var(--deep-teal);
   font-family: var(--font-heading);
   font-size: 0.8rem;
   font-weight: 600;
@@ -112,7 +112,7 @@
 }
 
 .heroHighlight {
-  background: linear-gradient(135deg, var(--warm-gold), var(--warm-gold-light));
+  background: linear-gradient(135deg, var(--warm-gold), var(--warm-gold));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -238,7 +238,7 @@
 }
 
 .cardLink:hover {
-  color: var(--deep-teal-dark);
+  color: var(--deep-teal);
   transform: translateX(4px);
 }
 
@@ -360,7 +360,7 @@
 
 /* CTA SECTION */
 .ctaSection {
-  background: linear-gradient(135deg, var(--deep-teal), var(--deep-teal-light));
+  background: var(--deep-teal);
   padding: 5rem 0;
 }
 

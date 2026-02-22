@@ -1,6 +1,7 @@
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
 
 export const metadata = {
   metadataBase: new URL('https://bhattaraikapil.com.np'),
@@ -32,7 +33,7 @@ export const metadata = {
     title: 'Kapil Bhattarai | Agricultural Data Scientist & Crop Modeling Consultant',
     description:
       'Crop modeling (DSSAT), geospatial analytics, and machine learning solutions for agriculture.',
-    images: [{ url: '/images/my_image2.jpg', width: 800, height: 600 }],
+    images: [{ url: '/images/my_image2.webp', width: 400, height: 405 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -76,6 +77,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main>{children}</main>
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

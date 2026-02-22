@@ -13,7 +13,7 @@ const caseStudies = [
         title: 'Precision Nitrogen Management in Spring Rice',
         location: 'Chitwan, Nepal',
         badge: 'DSSAT · Crop Modeling',
-        image: '/images/portfolio_item1.jpg',
+        image: '/images/portfolio_item1.webp',
         problem: 'Farmers in Chitwan, Nepal were applying nitrogen fertilizers based on blanket recommendations, leading to inefficient resource use and environmental impact.',
         approach: 'Applied DSSAT decision support tools to model nitrogen dynamics in spring rice (Oryza sativa L.) across multiple management scenarios.',
         tools: ['DSSAT v4.8', 'Python', 'R', 'Field Experiments'],
@@ -25,7 +25,7 @@ const caseStudies = [
         title: 'DSSAT Graphical Visualization GB2',
         location: 'University of Florida',
         badge: 'Development · Python',
-        image: '/images/gb2_screenshot.jpeg',
+        image: '/images/gb2_screenshot.webp',
         problem: 'Existing DSSAT visualization tools had limited interactivity and did not fully support the latest model outputs in v4.8.6.',
         approach: 'Developing Graphical Visualization GB2 with enhanced data visualization capabilities, modern UI, and improved data processing.',
         tools: ['Python', 'Data Visualization', 'DSSAT v4.8.6', 'Fortran'],
@@ -36,12 +36,12 @@ const caseStudies = [
 ];
 
 const additionalProjects = [
-    { title: 'Treatment Effect Analysis', desc: 'Boxplot comparison of crop responses across three treatment groups to evaluate experimental outcomes.', tags: ['R', 'Statistics', 'Data Viz'], image: '/images/portfolio_item3.jpg' },
-    { title: 'Farmer Platform Usability Survey', desc: 'Survey analysis of farmer responses on ease of registration across mobile app, website, and both platforms.', tags: ['R', 'Survey Analysis', 'Data Viz'], image: '/images/portfolio_item9.jpg' },
-    { title: 'Rogcheck — Disease ID App', desc: 'Android app using CNN & TensorFlow Lite for offline crop disease detection across 10 diseases.', tags: ['CNN', 'TFLite', 'Java'], image: '/images/rogcheck_app.png' },
-    { title: 'Remote Sensing Analysis', desc: 'Satellite imagery analysis for agricultural monitoring.', tags: ['Remote Sensing', 'Python'], image: '/images/portfolio_item8.jpg' },
-    { title: 'DNA Sequencing Classifier', desc: 'Built a classifier for DNA sequencing data achieving 99.3% accuracy with confusion matrix evaluation across 7 classes.', tags: ['Python', 'ML', 'Bioinformatics'], image: '/images/portfolio_item4.jpg' },
-    { title: 'R Data Analysis Workshop', desc: 'Conducted a data analysis training with R-Studio for agriculture, veterinary, and fisheries students at AFU, Rampur, Chitwan. Organized by GAVS.', tags: ['R', 'Training', 'Workshop'], image: '/images/portfolio_item10.jpg' },
+    { title: 'Treatment Effect Analysis', desc: 'Boxplot comparison of crop responses across three treatment groups to evaluate experimental outcomes.', tags: ['R', 'Statistics', 'Data Viz'], image: '/images/portfolio_item3.webp' },
+    { title: 'Farmer Platform Usability Survey', desc: 'Survey analysis of farmer responses on ease of registration across mobile app, website, and both platforms.', tags: ['R', 'Survey Analysis', 'Data Viz'], image: '/images/portfolio_item9.webp' },
+    { title: 'Rogcheck — Disease ID App', desc: 'Android app using CNN & TensorFlow Lite for offline crop disease detection across 10 diseases.', tags: ['CNN', 'TFLite', 'Java'], image: '/images/rogcheck_app.webp' },
+    { title: 'Remote Sensing Analysis', desc: 'Satellite imagery analysis for agricultural monitoring.', tags: ['Remote Sensing', 'Python'], image: '/images/portfolio_item8.webp' },
+    { title: 'DNA Sequencing Classifier', desc: 'Built a classifier for DNA sequencing data achieving 99.3% accuracy with confusion matrix evaluation across 7 classes.', tags: ['Python', 'ML', 'Bioinformatics'], image: '/images/portfolio_item4.webp' },
+    { title: 'R Data Analysis Workshop', desc: 'Conducted a data analysis training with R-Studio for agriculture, veterinary, and fisheries students at AFU, Rampur, Chitwan. Organized by GAVS.', tags: ['R', 'Training', 'Workshop'], image: '/images/portfolio_item10.webp' },
 ];
 
 export default function PortfolioPage() {

@@ -10,27 +10,19 @@
    CSS VARIABLES
    =========================== */
 :root {
-  /* Blueprint Colors */
+  /* Core Colors — 3 brand colors only */
   --deep-teal: #0D7377;
-  --deep-teal-dark: #0a5c5f;
-  --deep-teal-light: #10918a;
   --dark-navy: #14274E;
-  --dark-navy-light: #1a3566;
   --warm-gold: #D4A843;
-  --warm-gold-light: #e0be6a;
   --light-gray: #F5F5F5;
   --white: #FFFFFF;
   --text-dark: #1a1a2e;
   --text-muted: #6b7280;
-  --text-light: #9ca3af;
   --border-color: #e5e7eb;
   --card-bg: #ffffff;
-  --card-bg-dark: #1a2744;
-  --overlay-dark: rgba(20, 39, 78, 0.92);
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.15);
-  --shadow-glow: 0 0 40px rgba(13, 115, 119, 0.15);
 
   /* Typography */
   --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -100,7 +92,7 @@ a {
 }
 
 a:hover {
-  color: var(--deep-teal-dark);
+  color: var(--deep-teal);
 }
 
 ul, ol {
@@ -215,7 +207,7 @@ p {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--deep-teal), var(--deep-teal-light));
+  background: var(--deep-teal);
   color: var(--white);
   box-shadow: 0 4px 15px rgba(13, 115, 119, 0.3);
 }
@@ -240,7 +232,7 @@ p {
 }
 
 .btn-gold {
-  background: linear-gradient(135deg, var(--warm-gold), var(--warm-gold-light));
+  background: var(--warm-gold);
   color: var(--dark-navy);
   box-shadow: 0 4px 15px rgba(212, 168, 67, 0.3);
 }
@@ -292,7 +284,7 @@ p {
 }
 
 .card-dark {
-  background: var(--card-bg-dark);
+  background: var(--dark-navy);
   border-color: rgba(255, 255, 255, 0.08);
 }
 

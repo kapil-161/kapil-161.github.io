@@ -14,7 +14,7 @@
     background: rgba(13, 115, 119, 0.2);
     border: 1px solid rgba(13, 115, 119, 0.3);
     border-radius: 20px;
-    color: var(--deep-teal-light);
+    color: var(--deep-teal);
     font-family: var(--font-heading);
     font-size: 0.8rem;
     font-weight: 600;
@@ -167,7 +167,7 @@
 
 /* CTA */
 .ctaSection {
-    background: linear-gradient(135deg, var(--deep-teal), var(--deep-teal-light));
+    background: var(--deep-teal);
     padding: 5rem 0;
 }
 

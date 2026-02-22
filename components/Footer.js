@@ -19,9 +19,7 @@ export default function Footer() {
                     <div className={styles.links}>
                         <h5>Quick Links</h5>
                         <Link href="/about">About</Link>
-                        <Link href="/services">Services</Link>
-                        <Link href="/portfolio">Portfolio</Link>
-                        <Link href="/blog">Blog</Link>
+                        <Link href="/portfolio">Work</Link>
                         <Link href="/research">Research</Link>
                         <Link href="/contact">Contact</Link>
                     </div>
@@ -38,8 +36,8 @@ export default function Footer() {
                         <h5>Connect</h5>
                         <a href="https://www.linkedin.com/in/kapil-bhattarai-792417192/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         <a href="https://github.com/kapil-161" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-                        <a href="https://www.researchgate.net/" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+                        <a href="https://scholar.google.com/citations?user=vqVzA0gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                        <a href="https://www.researchgate.net/profile/Kapil-Bhattarai-5" target="_blank" rel="noopener noreferrer">ResearchGate</a>
                         <a href="https://www.youtube.com/@AFUStudio" target="_blank" rel="noopener noreferrer">YouTube</a>
                     </div>
                 </div>
