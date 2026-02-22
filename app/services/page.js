@@ -15,7 +15,7 @@ export default function ServicesPage() {
                         <span className={styles.badge}>Services</span>
                         <h1>Turning Agricultural Data Into Decisions</h1>
                         <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: '600px', margin: '0 auto' }}>
-                            I help agriculture organizations, research institutions, and agribusinesses make smarter decisions through data.
+                            I help agriculture organizations, research institutions, and agribusinesses make smarter decisions through precision agriculture and data science.
                         </p>
                     </div>
                 </div>
@@ -59,6 +59,7 @@ export default function ServicesPage() {
                                 <ul className={styles.deliverables}>
                                     <li>Land use and land cover mapping using satellite imagery</li>
                                     <li>NDVI analysis and crop health monitoring</li>
+                                    <li>Precision agriculture mapping and variable-rate application zones</li>
                                     <li>Site suitability analysis for crop planning</li>
                                     <li>Spatial data processing and visualization pipelines</li>
                                     <li>Custom GIS maps and interactive dashboards</li>

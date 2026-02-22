@@ -52,6 +52,31 @@ export default function ResearchPage() {
                 </div>
             </section>
 
+            {/* RESEARCH PROJECTS */}
+            <section className="section">
+                <div className="container">
+                    <div className="section-header">
+                        <h2>Research Projects</h2>
+                        <p>Key research projects with detailed objectives, methods, and outcomes.</p>
+                    </div>
+                    <div className={styles.pubList}>
+                        <div className={styles.pubItem}>
+                            <div className={styles.pubType}>Crop Modeling • Chitwan, Nepal</div>
+                            <h4>Precision Nitrogen Management in Spring Rice</h4>
+                            <p className={styles.pubMeta}>Applied DSSAT decision support tools to model nitrogen dynamics in spring rice (Oryza sativa L.) across multiple management scenarios.
+                                Identified optimized application rates that could reduce input costs by 15–20% while maintaining yield. Published in Turkish Journal of Agriculture-Food Science and Technology (2024).</p>
+                            <div className={styles.pubMeta}><strong>Tools:</strong> DSSAT v4.8, Python, R, Field Experiments</div>
+                        </div>
+                        <div className={styles.pubItem}>
+                            <div className={styles.pubType}>Software Development • University of Florida</div>
+                            <h4>DSSAT Graphical Visualization GB2</h4>
+                            <p className={styles.pubMeta}>Contributing to DSSAT v4.8.6 by developing an enhanced graphical visualization tool with modern UI and improved data processing capabilities. Used by researchers in 100+ countries.</p>
+                            <div className={styles.pubMeta}><strong>Tools:</strong> Python, Data Visualization, DSSAT v4.8.6, Fortran</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* PUBLICATIONS & POSTERS */}
             <section className={`section section-gray`}>
                 <div className="container">
@@ -158,23 +183,18 @@ export default function ResearchPage() {
                     <div className="section-header">
                         <h2>Code & Repositories</h2>
                     </div>
-                    <div className="grid-3">
-                        <a href="https://github.com/kapil-161" target="_blank" rel="noopener noreferrer" className={styles.repoCard}>
-                            <div className={styles.repoIcon}>💻</div>
-                            <h4>GitHub Profile</h4>
-                            <p>Explore all my public repositories, code samples, and contributions.</p>
-                        </a>
+                    <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="https://github.com/kapil-161/GB2CPP" target="_blank" rel="noopener noreferrer" className={styles.repoCard}>
                             <div className={styles.repoIcon}>🌾</div>
                             <h4>DSSAT Graphical Visualization GB2</h4>
                             <p>Enhanced graphical visualization tool for DSSAT crop model outputs.</p>
                         </a>
-                        {/* [TODO] Add more repositories and datasets */}
-                        <div className={styles.repoCard} style={{ opacity: 0.5 }}>
-                            <div className={styles.repoIcon}>📂</div>
-                            <h4>More Coming Soon</h4>
-                            <p>Additional datasets and code repositories will be added as projects are completed.</p>
-                        </div>
+                        <a href="https://github.com/kapil-161" target="_blank" rel="noopener noreferrer" className={styles.repoCard}>
+                            <div className={styles.repoIcon}>💻</div>
+                            <h4>GitHub Profile</h4>
+                            <p>Explore all my public repositories, code samples, and contributions.</p>
+                        </a>
+
                     </div>
                 </div>
             </section>

@@ -77,16 +77,6 @@ export default function ContactPage() {
 
                         {/* SIDEBAR */}
                         <div className={styles.sidebar}>
-                            {/* CALENDLY */}
-                            <div className={styles.sideCard}>
-                                <div className={styles.sideCardIcon}>📅</div>
-                                <h4>Book a Free Call</h4>
-                                <p>Skip the form — schedule a free 30-minute discovery call directly.</p>
-                                {/* [TODO] Replace with your actual Calendly link */}
-                                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-sm" style={{ width: '100%' }}>
-                                    Schedule on Calendly
-                                </a>
-                            </div>
 
                             {/* EMAIL */}
                             <div className={styles.sideCard}>

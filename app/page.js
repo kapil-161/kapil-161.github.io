@@ -1,3 +1,4 @@
+'use client';
 import styles from './page.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -17,10 +18,9 @@ export default function HomePage() {
               <span className={styles.heroBadge}>MS Student • University of Florida</span>
               <h1>Turn Field Data Into <span className={styles.heroHighlight}>Actionable Intelligence</span></h1>
               <p className={styles.heroSub}>
-                Crop modeling (DSSAT), geospatial analytics, and machine learning solutions for agribusinesses, research institutions, and government agencies.
+                Crop modeling (DSSAT), precision agriculture, geospatial analytics, and machine learning solutions for agribusinesses, research institutions, and government agencies.
               </p>
               <div className={styles.heroBtns}>
-                <Link href="/contact" className="btn btn-primary btn-lg">Book a Free Consultation</Link>
                 <Link href="/portfolio" className="btn btn-secondary btn-lg">View My Work</Link>
               </div>
               <p className={styles.heroCredential}>
@@ -30,10 +30,10 @@ export default function HomePage() {
             <div className={styles.heroImage}>
               <div className={styles.heroImageFrame}>
                 <Image
-                  src="/images/my_image2.webp"
+                  src="/images/hero_profile.webp"
                   alt="Kapil Bhattarai - Agricultural Data Scientist"
-                  width={420}
-                  height={420}
+                  width={400}
+                  height={407}
                   priority
                   className={styles.heroPhoto}
                 />
@@ -42,10 +42,19 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        <button
+          className={styles.scrollDownBtn}
+          onClick={() => document.getElementById('proof-bar')?.scrollIntoView({ behavior: 'smooth' })}
+          aria-label="Scroll down"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
       </section>
 
       {/* SOCIAL PROOF BAR */}
-      <section className={styles.proofBar}>
+      <section id="proof-bar" className={styles.proofBar}>
         <div className="container">
           <div className={styles.proofGrid}>
             <div className={styles.proofItem}>
@@ -172,7 +181,7 @@ export default function HomePage() {
           <div className={styles.ctaContent}>
             <h2>Ready to Leverage Data for Better Agricultural Outcomes?</h2>
             <p>Let&apos;s discuss how data science and crop modeling can transform your agricultural research or operations.</p>
-            <Link href="/contact" className="btn btn-gold btn-lg">Schedule a Free 30-Min Call</Link>
+            <Link href="/contact" className="btn btn-gold btn-lg">Get In Touch</Link>
           </div>
         </div>
       </section>

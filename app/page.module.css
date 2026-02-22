@@ -147,17 +147,31 @@
 
 .heroImageFrame {
   position: relative;
-  width: 340px;
-  height: 340px;
+  width: 360px;
+  height: 420px;
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.heroImageFrame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  background:
+    radial-gradient(ellipse at center, transparent 40%, rgba(11, 25, 58, 0.55) 100%),
+    linear-gradient(to bottom, rgba(11, 25, 58, 0.1) 0%, transparent 30%, transparent 60%, rgba(11, 25, 58, 0.45) 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .heroPhoto {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
+  filter: brightness(0.95) contrast(1.05);
 }
 
 .heroImageGlow {
@@ -168,6 +182,45 @@
   z-index: -1;
   opacity: 0.5;
   filter: blur(20px);
+}
+
+/* SCROLL DOWN BUTTON */
+.scrollDownBtn {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  transition: border-color 0.3s, color 0.3s;
+  animation: bounceDown 2s ease-in-out infinite;
+  z-index: 3;
+}
+
+.scrollDownBtn:hover {
+  border-color: var(--warm-gold);
+  color: var(--warm-gold);
+  animation: none;
+}
+
+@keyframes bounceDown {
+
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(6px);
+  }
 }
 
 /* SOCIAL PROOF BAR */
@@ -395,8 +448,8 @@
   }
 
   .heroImageFrame {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 280px;
   }
 
   .heroSub {
