@@ -14,7 +14,7 @@ export default function ServicesPage() {
                     <div className="section-header">
                         <span className={styles.badge}>Services</span>
                         <h1>Turning Agricultural Data Into Decisions</h1>
-                        <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: '600px', margin: '0 auto' }}>
+                        <p style={{ color: 'rgba(226, 227, 237, 0.7)', maxWidth: '600px', margin: '0 auto' }}>
                             I help agriculture organizations, research institutions, and agribusinesses make smarter decisions through precision agriculture and data science.
                         </p>
                     </div>

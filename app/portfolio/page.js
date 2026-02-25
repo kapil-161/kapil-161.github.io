@@ -60,7 +60,7 @@ export default function PortfolioPage() {
                     <div className="section-header">
                         <span className={styles.badge}>Work</span>
                         <h1>Projects &amp; Applications</h1>
-                        <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: '600px', margin: '0 auto' }}>
+                        <p style={{ color: 'rgba(226, 227, 237, 0.7)', maxWidth: '600px', margin: '0 auto' }}>
                             Applied tools, apps, analyses, and workshops — the practical side of agricultural data science.
                         </p>
                     </div>

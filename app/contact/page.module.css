@@ -1,20 +1,20 @@
 .hero {
     padding: 10rem 0 4rem;
-    background: linear-gradient(135deg, #14274E, #0f1b3d);
+    background: var(--bg-dark);
     text-align: center;
 }
 
 .hero h1 {
-    color: var(--white);
+    color: var(--text-on-dark);
 }
 
 .badge {
     display: inline-block;
     padding: 6px 16px;
-    background: rgba(13, 115, 119, 0.2);
-    border: 1px solid rgba(13, 115, 119, 0.3);
+    background: var(--accent-subtle);
+    border: 1px solid var(--accent-border);
     border-radius: 20px;
-    color: var(--deep-teal);
+    color: var(--accent-hover);
     font-family: var(--font-heading);
     font-size: 0.8rem;
     font-weight: 600;
@@ -36,7 +36,7 @@
 
 .formSection>p {
     margin-bottom: 2rem;
-    color: var(--text-muted);
+    color: var(--text-dim);
 }
 
 .form {
@@ -61,19 +61,19 @@
     font-family: var(--font-heading);
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--text);
 }
 
 .formGroup input,
 .formGroup select,
 .formGroup textarea {
     padding: 12px 16px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border);
     border-radius: var(--border-radius-sm);
     font-family: var(--font-body);
     font-size: 0.92rem;
-    color: var(--text-dark);
-    background: var(--white);
+    color: var(--text);
+    background: var(--bg-card);
     outline: none;
     transition: all 0.2s ease;
 }
@@ -81,8 +81,8 @@
 .formGroup input:focus,
 .formGroup select:focus,
 .formGroup textarea:focus {
-    border-color: var(--deep-teal);
-    box-shadow: 0 0 0 3px rgba(13, 115, 119, 0.1);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-subtle);
 }
 
 .formGroup textarea {
@@ -108,9 +108,9 @@
 
 .sideCard {
     padding: 1.75rem;
-    background: var(--light-gray);
+    background: var(--bg-alt);
     border-radius: var(--border-radius);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border);
 }
 
 .sideCardIcon {
@@ -132,26 +132,26 @@
     display: block;
     font-family: var(--font-mono);
     font-size: 0.85rem;
-    color: var(--deep-teal);
+    color: var(--accent);
     font-weight: 500;
     word-break: break-all;
 }
 
 .emailLink:hover {
-    color: var(--deep-teal);
+    color: var(--accent);
 }
 
 .responseNote {
     padding: 1rem 1.25rem;
-    background: rgba(13, 115, 119, 0.06);
-    border: 1px solid rgba(13, 115, 119, 0.15);
+    background: var(--accent-subtle);
+    border: 1px solid var(--accent-border);
     border-radius: var(--border-radius-sm);
     font-size: 0.85rem;
-    color: var(--text-muted);
+    color: var(--text-dim);
 }
 
 .responseNote strong {
-    color: var(--deep-teal);
+    color: var(--accent);
 }
 
 @media (max-width: 768px) {

@@ -1,20 +1,20 @@
 .hero {
     padding: 10rem 0 4rem;
-    background: linear-gradient(135deg, #14274E, #0f1b3d);
+    background: var(--bg-dark);
     text-align: center;
 }
 
 .hero h1 {
-    color: var(--white);
+    color: var(--text-on-dark);
 }
 
 .badge {
     display: inline-block;
     padding: 6px 16px;
-    background: rgba(13, 115, 119, 0.2);
-    border: 1px solid rgba(13, 115, 119, 0.3);
+    background: var(--accent-subtle);
+    border: 1px solid var(--accent-border);
     border-radius: 20px;
-    color: var(--deep-teal);
+    color: var(--accent-hover);
     font-family: var(--font-heading);
     font-size: 0.8rem;
     font-weight: 600;
@@ -38,15 +38,15 @@
     padding: 12px 0 12px 28px;
     position: relative;
     font-size: 1rem;
-    color: var(--text-muted);
-    border-bottom: 1px solid var(--border-color);
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--border);
 }
 
 .interestList li::before {
     content: '→';
     position: absolute;
     left: 0;
-    color: var(--deep-teal);
+    color: var(--accent);
     font-weight: 700;
 }
 
@@ -59,8 +59,8 @@
 
 .pubItem {
     padding: 2rem;
-    background: var(--white);
-    border: 1px solid var(--border-color);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
 }
@@ -68,8 +68,8 @@
 .pubType {
     display: inline-block;
     padding: 3px 10px;
-    background: rgba(212, 168, 67, 0.12);
-    color: var(--warm-gold);
+    background: var(--accent-subtle);
+    color: var(--accent-hover);
     font-family: var(--font-heading);
     font-size: 0.72rem;
     font-weight: 600;
@@ -85,7 +85,7 @@
 
 .pubMeta {
     font-size: 0.85rem;
-    color: var(--deep-teal);
+    color: var(--accent);
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
@@ -104,7 +104,7 @@
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(180deg, var(--deep-teal), var(--warm-gold));
+    background: linear-gradient(180deg, var(--accent), var(--accent-hover));
 }
 
 .timelineItem {
@@ -119,9 +119,9 @@
     height: 18px;
     min-width: 18px;
     border-radius: 50%;
-    background: var(--deep-teal);
-    border: 3px solid var(--white);
-    box-shadow: 0 0 0 2px var(--deep-teal);
+    background: var(--accent);
+    border: 3px solid var(--bg-card);
+    box-shadow: 0 0 0 2px var(--accent);
     position: relative;
     z-index: 1;
 }
@@ -135,7 +135,7 @@
     font-family: var(--font-heading);
     font-size: 0.78rem;
     font-weight: 600;
-    color: var(--warm-gold);
+    color: var(--accent-hover);
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -154,8 +154,8 @@
 .repoCard {
     display: block;
     padding: 2rem;
-    background: var(--white);
-    border: 1px solid var(--border-color);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
     border-radius: var(--border-radius);
     text-decoration: none;
     transition: all 0.3s ease;
@@ -165,7 +165,7 @@
 .repoCard:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
-    border-color: rgba(13, 115, 119, 0.2);
+    border-color: var(--accent-border);
 }
 
 .repoIcon {
@@ -194,10 +194,10 @@
     align-items: center;
     gap: 8px;
     padding: 14px 24px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: var(--border-radius-sm);
-    color: var(--white);
+    color: var(--text-on-dark);
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.9rem;
@@ -206,9 +206,9 @@
 }
 
 .profileBtn:hover {
-    background: rgba(13, 115, 119, 0.3);
-    border-color: var(--deep-teal);
-    color: var(--white);
+    background: var(--accent-subtle);
+    border-color: var(--accent-border);
+    color: var(--text-on-dark);
     transform: translateY(-2px);
 }
 

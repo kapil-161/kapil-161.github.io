@@ -14,7 +14,7 @@ export default function ResearchPage() {
                     <div className="section-header">
                         <span className={styles.badge}>Research</span>
                         <h1>Research & Publications</h1>
-                        <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: '600px', margin: '0 auto' }}>
+                        <p style={{ color: 'rgba(226, 227, 237, 0.7)', maxWidth: '600px', margin: '0 auto' }}>
                             My academic work spanning crop simulation modeling, precision agriculture, and geospatial analytics.
                         </p>
                     </div>

@@ -1,20 +1,20 @@
 .hero {
     padding: 10rem 0 4rem;
-    background: linear-gradient(135deg, #14274E, #0f1b3d);
+    background: var(--bg-dark);
     text-align: center;
 }
 
 .hero h1 {
-    color: var(--white);
+    color: var(--text-on-dark);
 }
 
 .badge {
     display: inline-block;
     padding: 6px 16px;
-    background: rgba(13, 115, 119, 0.2);
-    border: 1px solid rgba(13, 115, 119, 0.3);
+    background: var(--accent-subtle);
+    border: 1px solid var(--accent-border);
     border-radius: 20px;
-    color: var(--deep-teal);
+    color: var(--accent-hover);
     font-family: var(--font-heading);
     font-size: 0.8rem;
     font-weight: 600;
@@ -30,8 +30,8 @@
 }
 
 .blogCard {
-    background: var(--white);
-    border: 1px solid var(--border-color);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
     border-radius: var(--border-radius);
     overflow: hidden;
     transition: all 0.3s ease;
@@ -41,7 +41,7 @@
 .blogCard:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
-    border-color: rgba(13, 115, 119, 0.2);
+    border-color: var(--accent-border);
 }
 
 .blogCardContent {
@@ -57,8 +57,8 @@
 
 .blogCategory {
     padding: 3px 10px;
-    background: rgba(13, 115, 119, 0.1);
-    color: var(--deep-teal);
+    background: var(--accent-subtle);
+    color: var(--accent);
     font-family: var(--font-heading);
     font-size: 0.72rem;
     font-weight: 600;
@@ -69,7 +69,7 @@
 
 .blogDate {
     font-size: 0.82rem;
-    color: var(--text-muted);
+    color: var(--text-dim);
 }
 
 .blogCardContent h3 {
@@ -89,19 +89,19 @@
     justify-content: space-between;
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--border);
 }
 
 .readTime {
     font-size: 0.8rem;
-    color: var(--text-muted);
+    color: var(--text-dim);
 }
 
 .blogKeyword {
     font-family: var(--font-mono);
     font-size: 0.72rem;
-    color: var(--deep-teal);
-    background: rgba(13, 115, 119, 0.06);
+    color: var(--accent);
+    background: var(--accent-subtle);
     padding: 2px 8px;
     border-radius: 4px;
 }
@@ -110,7 +110,7 @@
 .blogCta {
     text-align: center;
     padding: 3rem;
-    background: var(--light-gray);
+    background: var(--bg-alt);
     border-radius: var(--border-radius-lg);
 }
 
@@ -129,7 +129,7 @@
 .subscribeInput {
     flex: 1;
     padding: 12px 16px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border);
     border-radius: var(--border-radius-sm);
     font-family: var(--font-body);
     font-size: 0.9rem;
@@ -138,7 +138,7 @@
 }
 
 .subscribeInput:focus {
-    border-color: var(--deep-teal);
+    border-color: var(--accent);
 }
 
 @media (max-width: 768px) {

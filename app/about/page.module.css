@@ -1,21 +1,21 @@
 .hero {
     padding: 10rem 0 4rem;
-    background: linear-gradient(135deg, #14274E, #0f1b3d);
+    background: var(--bg-dark);
     text-align: center;
 }
 
 .hero h1 {
-    color: var(--white);
+    color: var(--text-on-dark);
     margin-bottom: 0;
 }
 
 .hero .badge {
     display: inline-block;
     padding: 6px 16px;
-    background: rgba(13, 115, 119, 0.2);
-    border: 1px solid rgba(13, 115, 119, 0.3);
+    background: var(--accent-subtle);
+    border: 1px solid var(--accent-border);
     border-radius: 20px;
-    color: var(--deep-teal);
+    color: var(--accent-hover);
     font-family: var(--font-heading);
     font-size: 0.8rem;
     font-weight: 600;
@@ -25,7 +25,7 @@
 
 /* INTRO */
 .introSection {
-    background: var(--white);
+    background: var(--bg-card);
 }
 
 .introGrid {
@@ -53,13 +53,13 @@
 .introText h3 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: var(--deep-teal);
+    color: var(--accent);
     font-size: 1.3rem;
 }
 
 .leadText {
     font-size: 1.15rem;
-    color: var(--text-dark);
+    color: var(--text-dim);
     line-height: 1.8;
 }
 
@@ -72,7 +72,7 @@
 
 /* EXPERIENCE */
 .expSection {
-    background: var(--light-gray);
+    background: var(--bg-alt);
 }
 
 .expList {
@@ -82,11 +82,11 @@
 }
 
 .expItem {
-    background: var(--white);
+    background: var(--bg-card);
     border-radius: var(--border-radius);
     padding: 2rem;
-    border: 1px solid var(--border-color);
-    border-left: 4px solid var(--deep-teal);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
     transition: box-shadow 0.3s ease;
 }
 
@@ -105,13 +105,13 @@
 
 .expMeta h3 {
     font-size: 1.2rem;
-    color: var(--dark-navy);
+    color: var(--text);
     margin-bottom: 0.25rem;
 }
 
 .expCompany {
     font-size: 0.92rem;
-    color: var(--deep-teal);
+    color: var(--accent);
     font-weight: 600;
     font-family: var(--font-heading);
 }
@@ -119,8 +119,8 @@
 .expDate {
     font-size: 0.82rem;
     font-family: var(--font-mono);
-    color: var(--text-muted);
-    background: var(--light-gray);
+    color: var(--text-faint);
+    background: var(--bg-alt);
     padding: 4px 10px;
     border-radius: 20px;
     white-space: nowrap;
@@ -137,7 +137,7 @@
 
 .expPoints li {
     font-size: 0.95rem;
-    color: var(--text-muted);
+    color: var(--text-dim);
     padding-left: 1.25rem;
     position: relative;
     line-height: 1.6;
@@ -147,13 +147,13 @@
     content: '→';
     position: absolute;
     left: 0;
-    color: var(--deep-teal);
+    color: var(--accent);
     font-size: 0.85rem;
 }
 
 /* SKILLS */
 .skillsSection {
-    background: var(--white);
+    background: var(--bg-card);
 }
 
 .skillCard {
@@ -178,8 +178,8 @@
 .skillList li {
     padding: 6px 0;
     font-size: 0.9rem;
-    color: var(--text-muted);
-    border-bottom: 1px solid var(--border-color);
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--border);
 }
 
 .skillList li:last-child {
@@ -188,7 +188,7 @@
 
 /* CERTIFICATIONS */
 .certSection {
-    background: var(--white);
+    background: var(--bg-card);
 }
 
 .certCards {
@@ -199,11 +199,11 @@
 }
 
 .certCard {
-    background: var(--light-gray);
+    background: var(--bg-alt);
     border-radius: var(--border-radius);
     overflow: hidden;
     transition: all 0.3s ease;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border);
 }
 
 .certCard:hover {
@@ -228,8 +228,8 @@
 .certBadge {
     display: inline-block;
     padding: 3px 10px;
-    background: rgba(13, 115, 119, 0.1);
-    color: var(--deep-teal);
+    background: var(--accent-subtle);
+    color: var(--accent);
     font-family: var(--font-heading);
     font-size: 0.72rem;
     font-weight: 600;
@@ -251,12 +251,12 @@
 
 .certQuote {
     padding: 1.25rem;
-    border-left: 4px solid var(--warm-gold);
-    background: rgba(212, 168, 67, 0.06);
+    border-left: 4px solid var(--accent);
+    background: var(--accent-subtle);
     border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
     font-style: italic;
     font-size: 0.95rem;
-    color: var(--text-dark);
+    color: var(--text-dim);
     line-height: 1.7;
     text-align: center;
     max-width: 700px;
@@ -266,7 +266,7 @@
 .certListHeading {
     text-align: center;
     margin: 2.5rem 0 1.5rem;
-    color: var(--dark-navy);
+    color: var(--text);
     font-size: 1.3rem;
 }
 
@@ -281,7 +281,7 @@
     align-items: flex-start;
     gap: 0.75rem;
     padding: 1rem;
-    background: var(--light-gray);
+    background: var(--bg-alt);
     border-radius: var(--border-radius-sm);
     transition: all 0.2s ease;
     text-decoration: none;
@@ -290,7 +290,7 @@
 }
 
 .certListItem:hover {
-    background: rgba(13, 115, 119, 0.05);
+    background: var(--accent-subtle);
     transform: translateY(-2px);
 }
 
@@ -303,12 +303,12 @@
 .certListItem h5 {
     font-size: 0.9rem;
     margin-bottom: 0.25rem;
-    color: var(--dark-navy);
+    color: var(--text);
 }
 
 .certListItem p {
     font-size: 0.8rem;
-    color: var(--text-muted);
+    color: var(--text-dim);
     margin: 0;
 }
 
@@ -325,10 +325,10 @@
     align-items: center;
     gap: 8px;
     padding: 14px 24px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: var(--border-radius-sm);
-    color: var(--white);
+    color: var(--text-on-dark);
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.9rem;
@@ -337,9 +337,9 @@
 }
 
 .profileBtn:hover {
-    background: rgba(13, 115, 119, 0.3);
-    border-color: var(--deep-teal);
-    color: var(--white);
+    background: var(--accent-subtle);
+    border-color: var(--accent-border);
+    color: var(--text-on-dark);
     transform: translateY(-2px);
 }
 

@@ -97,7 +97,7 @@ export default function AboutPage() {
                             <div className={styles.expHeader}>
                                 <div className={styles.expMeta}>
                                     <h3>Agriculture Intern</h3>
-                                    <span className={styles.expCompany}>Prime Ster Agriculture Modernization Project — Chitwan, Nepal</span>
+                                    <span className={styles.expCompany}>Prime Minister Agriculture Modernization Project (PMAMP) — Chitwan, Nepal</span>
                                 </div>
                                 <span className={styles.expDate}>Feb 2022 – Jul 2022</span>
                             </div>

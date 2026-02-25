@@ -7,7 +7,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #0f1b3d 0%, #14274E 40%, #0a1a35 100%);
+  background: var(--bg-dark);
   overflow: hidden;
   padding-top: calc(var(--header-height) + 2rem);
   padding-bottom: 4rem;
@@ -17,8 +17,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 30% 50%, rgba(13, 115, 119, 0.15) 0%, transparent 60%),
-    radial-gradient(ellipse at 70% 80%, rgba(212, 168, 67, 0.08) 0%, transparent 50%);
+    radial-gradient(ellipse at 30% 50%, rgba(108, 127, 196, 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 80%, rgba(108, 127, 196, 0.05) 0%, transparent 50%);
 }
 
 .heroParticles {
@@ -31,7 +31,7 @@
   position: absolute;
   width: 4px;
   height: 4px;
-  background: rgba(212, 168, 67, 0.3);
+  background: rgba(108, 127, 196, 0.25);
   border-radius: 50%;
   animation: float 6s ease-in-out infinite;
 }
@@ -92,10 +92,10 @@
 .heroBadge {
   display: inline-block;
   padding: 6px 16px;
-  background: rgba(13, 115, 119, 0.2);
-  border: 1px solid rgba(13, 115, 119, 0.3);
+  background: var(--accent-subtle);
+  border: 1px solid var(--accent-border);
   border-radius: 20px;
-  color: var(--deep-teal);
+  color: var(--accent-hover);
   font-family: var(--font-heading);
   font-size: 0.8rem;
   font-weight: 600;
@@ -104,7 +104,7 @@
 }
 
 .hero h1 {
-  color: var(--white);
+  color: var(--text-on-dark);
   font-size: clamp(2rem, 4.5vw, 3.2rem);
   line-height: 1.15;
   margin-bottom: 1.5rem;
@@ -112,14 +112,14 @@
 }
 
 .heroHighlight {
-  background: linear-gradient(135deg, var(--warm-gold), var(--warm-gold));
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .heroSub {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(226, 227, 237, 0.7);
   font-size: 1.15rem;
   line-height: 1.7;
   max-width: 520px;
@@ -134,7 +134,7 @@
 }
 
 .heroCredential {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(226, 227, 237, 0.4);
   font-size: 0.85rem;
   font-style: italic;
   margin: 0;
@@ -160,8 +160,8 @@
   inset: 0;
   border-radius: 30px;
   background:
-    radial-gradient(ellipse at center, transparent 40%, rgba(11, 25, 58, 0.55) 100%),
-    linear-gradient(to bottom, rgba(11, 25, 58, 0.1) 0%, transparent 30%, transparent 60%, rgba(11, 25, 58, 0.45) 100%);
+    radial-gradient(ellipse at center, transparent 40%, rgba(13, 14, 20, 0.55) 100%),
+    linear-gradient(to bottom, rgba(13, 14, 20, 0.1) 0%, transparent 30%, transparent 60%, rgba(13, 14, 20, 0.45) 100%);
   pointer-events: none;
   z-index: 1;
 }
@@ -178,9 +178,9 @@
   position: absolute;
   inset: -2px;
   border-radius: 32px;
-  background: linear-gradient(135deg, var(--deep-teal), var(--warm-gold));
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.4;
   filter: blur(20px);
 }
 
@@ -191,7 +191,7 @@
   left: 50%;
   transform: translateX(-50%);
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -199,20 +199,19 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(226, 227, 237, 0.6);
   transition: border-color 0.3s, color 0.3s;
   animation: bounceDown 2s ease-in-out infinite;
   z-index: 3;
 }
 
 .scrollDownBtn:hover {
-  border-color: var(--warm-gold);
-  color: var(--warm-gold);
+  border-color: var(--accent);
+  color: var(--accent);
   animation: none;
 }
 
 @keyframes bounceDown {
-
   0%,
   100% {
     transform: translateX(-50%) translateY(0);
@@ -225,9 +224,9 @@
 
 /* SOCIAL PROOF BAR */
 .proofBar {
-  background: var(--white);
+  background: var(--bg-card);
   padding: 3rem 0;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border);
 }
 
 .proofGrid {
@@ -249,13 +248,13 @@
   font-family: var(--font-heading);
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--deep-teal);
+  color: var(--accent);
   line-height: 1;
 }
 
 .proofLabel {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: var(--text-faint);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 600;
@@ -264,12 +263,12 @@
 .proofDivider {
   width: 1px;
   height: 50px;
-  background: var(--border-color);
+  background: var(--border);
 }
 
 /* SERVICES SECTION */
 .servicesSection {
-  background: var(--white);
+  background: var(--bg-card);
 }
 
 .serviceCard {
@@ -286,32 +285,33 @@
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 0.9rem;
-  color: var(--deep-teal);
+  color: var(--accent);
   transition: all 0.2s ease;
 }
 
 .cardLink:hover {
-  color: var(--deep-teal);
+  color: var(--accent-hover);
   transform: translateX(4px);
 }
 
 /* CASE STUDIES */
 .caseStudiesSection {
-  background: var(--light-gray);
+  background: var(--bg-alt);
 }
 
 .caseCard {
-  background: var(--white);
+  background: var(--bg-card);
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border);
   transition: all 0.3s ease;
 }
 
 .caseCard:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
+  border-color: var(--accent-border);
 }
 
 .caseImage {
@@ -336,8 +336,8 @@
   top: 12px;
   left: 12px;
   padding: 4px 12px;
-  background: rgba(20, 39, 78, 0.85);
-  color: var(--warm-gold);
+  background: rgba(13, 14, 20, 0.85);
+  color: var(--accent-hover);
   font-family: var(--font-heading);
   font-size: 0.72rem;
   font-weight: 600;
@@ -363,7 +363,7 @@
 
 /* TESTIMONIAL */
 .testimonialSection {
-  background: linear-gradient(135deg, #14274E, #0f1b3d);
+  background: var(--bg-dark);
   padding: 5rem 0;
 }
 
@@ -375,16 +375,16 @@
 
 .quoteIcon {
   font-size: 4rem;
-  color: var(--warm-gold);
+  color: var(--accent);
   line-height: 1;
   margin-bottom: 1rem;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .testimonialQuote {
   font-size: 1.25rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(226, 227, 237, 0.9);
   font-style: italic;
   margin-bottom: 2rem;
 }
@@ -402,18 +402,18 @@
 }
 
 .testimonialInfo strong {
-  color: var(--white);
+  color: var(--text-on-dark);
   font-size: 1rem;
 }
 
 .testimonialInfo span {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(226, 227, 237, 0.5);
   font-size: 0.85rem;
 }
 
 /* CTA SECTION */
 .ctaSection {
-  background: var(--deep-teal);
+  background: var(--bg-dark);
   padding: 5rem 0;
 }
 
@@ -424,13 +424,13 @@
 }
 
 .ctaContent h2 {
-  color: var(--white);
+  color: var(--text-on-dark);
   margin-bottom: 1rem;
   font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 
 .ctaContent p {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(226, 227, 237, 0.75);
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }

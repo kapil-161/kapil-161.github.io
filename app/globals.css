@@ -1,6 +1,6 @@
 /* ===========================
    DESIGN SYSTEM — bhattaraikapil.com.np
-   Blueprint Color Palette, Typography, Components
+   Muted Dark Monochrome + Light Mode
    =========================== */
 
 /* Google Fonts */
@@ -9,21 +9,58 @@
 /* ===========================
    CSS VARIABLES
    =========================== */
-:root {
-  /* Core Colors — 3 brand colors only */
-  --deep-teal: #0D7377;
-  --dark-navy: #14274E;
-  --warm-gold: #D4A843;
-  --light-gray: #F5F5F5;
-  --white: #FFFFFF;
-  --text-dark: #1a1a2e;
-  --text-muted: #6b7280;
-  --border-color: #e5e7eb;
-  --card-bg: #ffffff;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.15);
 
+/* Dark theme (default) */
+:root,
+[data-theme="dark"] {
+  --bg: #0d0e14;
+  --bg-alt: #12131d;
+  --bg-card: #1e1f2e;
+  --bg-dark: #12131d;
+
+  --text: #e2e3ed;
+  --text-dim: #9a9bb5;
+  --text-faint: #5e5f7a;
+  --text-on-dark: #e2e3ed;
+
+  --accent: #6c7fc4;
+  --accent-hover: #8b9dd4;
+  --accent-subtle: rgba(108, 127, 196, 0.12);
+  --accent-border: rgba(108, 127, 196, 0.25);
+
+  --border: #252636;
+  --border-subtle: rgba(255, 255, 255, 0.06);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="light"] {
+  --bg: #f8f9fc;
+  --bg-alt: #eef0f8;
+  --bg-card: #ffffff;
+  --bg-dark: #1a1b28;
+
+  --text: #1a1b28;
+  --text-dim: #4a4b65;
+  --text-faint: #7e7f9a;
+  --text-on-dark: #e2e3ed;
+
+  --accent: #5567b0;
+  --accent-hover: #6c7fc4;
+  --accent-subtle: rgba(85, 103, 176, 0.10);
+  --accent-border: rgba(85, 103, 176, 0.25);
+
+  --border: #e2e3ed;
+  --border-subtle: rgba(0, 0, 0, 0.06);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+:root {
   /* Typography */
   --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -72,8 +109,8 @@ body {
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.6;
-  color: var(--text-dark);
-  background-color: var(--white);
+  color: var(--text);
+  background-color: var(--bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -86,13 +123,13 @@ img {
 }
 
 a {
-  color: var(--deep-teal);
+  color: var(--accent);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
 a:hover {
-  color: var(--deep-teal);
+  color: var(--accent-hover);
 }
 
 ul, ol {
@@ -106,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
-  color: var(--dark-navy);
+  color: var(--text);
 }
 
 h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); }
@@ -118,14 +155,14 @@ h6 { font-size: 1rem; }
 
 p {
   margin-bottom: var(--space-md);
-  color: var(--text-muted);
+  color: var(--text-dim);
   font-size: 1.05rem;
   line-height: 1.7;
 }
 
-.text-gold { color: var(--warm-gold); }
-.text-teal { color: var(--deep-teal); }
-.text-white { color: var(--white); }
+.text-gold { color: var(--accent-hover); }
+.text-teal { color: var(--accent); }
+.text-white { color: var(--text-on-dark); }
 
 /* ===========================
    LAYOUT
@@ -141,23 +178,23 @@ p {
 }
 
 .section-dark {
-  background-color: var(--dark-navy);
-  color: var(--white);
+  background-color: var(--bg-dark);
+  color: var(--text-on-dark);
 }
 
 .section-dark h2,
 .section-dark h3,
 .section-dark h4,
 .section-dark h5 {
-  color: var(--white);
+  color: var(--text-on-dark);
 }
 
 .section-dark p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(226, 227, 237, 0.75);
 }
 
 .section-gray {
-  background-color: var(--light-gray);
+  background-color: var(--bg-alt);
 }
 
 .section-header {
@@ -175,7 +212,7 @@ p {
   display: block;
   width: 60px;
   height: 4px;
-  background: linear-gradient(135deg, var(--deep-teal), var(--warm-gold));
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
   margin: var(--space-md) auto 0;
   border-radius: 2px;
 }
@@ -207,51 +244,53 @@ p {
 }
 
 .btn-primary {
-  background: var(--deep-teal);
-  color: var(--white);
-  box-shadow: 0 4px 15px rgba(13, 115, 119, 0.3);
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: 0 4px 15px var(--accent-border);
 }
 
 .btn-primary:hover {
+  background: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(13, 115, 119, 0.4);
-  color: var(--white);
+  box-shadow: 0 6px 25px var(--accent-border);
+  color: #ffffff;
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--white);
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: var(--text-on-dark);
+  border: 2px solid rgba(255, 255, 255, 0.35);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: var(--white);
-  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: var(--text-on-dark);
   transform: translateY(-2px);
 }
 
 .btn-gold {
-  background: var(--warm-gold);
-  color: var(--dark-navy);
-  box-shadow: 0 4px 15px rgba(212, 168, 67, 0.3);
+  background: transparent;
+  color: var(--text-on-dark);
+  border: 2px solid rgba(255, 255, 255, 0.35);
 }
 
 .btn-gold:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: var(--text-on-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(212, 168, 67, 0.4);
-  color: var(--dark-navy);
 }
 
 .btn-outline {
   background: transparent;
-  color: var(--deep-teal);
-  border: 2px solid var(--deep-teal);
+  color: var(--accent);
+  border: 2px solid var(--accent-border);
 }
 
 .btn-outline:hover {
-  background: var(--deep-teal);
-  color: var(--white);
+  background: var(--accent);
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
@@ -269,27 +308,27 @@ p {
    CARDS
    =========================== */
 .card {
-  background: var(--card-bg);
+  background: var(--bg-card);
   border-radius: var(--border-radius);
   padding: var(--space-2xl);
   box-shadow: var(--shadow-sm);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border);
   transition: all var(--transition-base);
 }
 
 .card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(13, 115, 119, 0.2);
+  border-color: var(--accent-border);
 }
 
 .card-dark {
-  background: var(--dark-navy);
-  border-color: rgba(255, 255, 255, 0.08);
+  background: var(--bg-dark);
+  border-color: var(--border-subtle);
 }
 
 .card-dark:hover {
-  border-color: rgba(13, 115, 119, 0.4);
+  border-color: var(--accent-border);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
@@ -300,10 +339,10 @@ p {
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius-sm);
-  background: linear-gradient(135deg, rgba(13, 115, 119, 0.1), rgba(13, 115, 119, 0.05));
+  background: var(--accent-subtle);
   margin-bottom: var(--space-lg);
   font-size: 1.5rem;
-  color: var(--deep-teal);
+  color: var(--accent);
 }
 
 .card h4 {
@@ -430,13 +469,13 @@ p {
 }
 
 .badge-teal {
-  background: rgba(13, 115, 119, 0.12);
-  color: var(--deep-teal);
+  background: var(--accent-subtle);
+  color: var(--accent);
 }
 
 .badge-gold {
-  background: rgba(212, 168, 67, 0.15);
-  color: var(--warm-gold);
+  background: var(--accent-subtle);
+  color: var(--accent-hover);
 }
 
 /* ===========================
@@ -468,7 +507,7 @@ p {
 
   h1 { font-size: 2rem; }
   h2 { font-size: 1.6rem; }
-  
+
   .btn {
     padding: 12px 24px;
     font-size: 0.9rem;

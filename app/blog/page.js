@@ -89,7 +89,7 @@ export default function BlogPage() {
                     <div className="section-header">
                         <span className={styles.badge}>Blog & Insights</span>
                         <h1>Thoughts on Agriculture, Data & Technology</h1>
-                        <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: '600px', margin: '0 auto' }}>
+                        <p style={{ color: 'rgba(226, 227, 237, 0.7)', maxWidth: '600px', margin: '0 auto' }}>
                             Technical articles, research summaries, tutorials, and insights from the intersection of agriculture and data science.
                         </p>
                     </div>

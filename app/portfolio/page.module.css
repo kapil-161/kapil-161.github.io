@@ -1,20 +1,20 @@
 .hero {
     padding: 10rem 0 4rem;
-    background: linear-gradient(135deg, #14274E, #0f1b3d);
+    background: var(--bg-dark);
     text-align: center;
 }
 
 .hero h1 {
-    color: var(--white);
+    color: var(--text-on-dark);
 }
 
 .badge {
     display: inline-block;
     padding: 6px 16px;
-    background: rgba(13, 115, 119, 0.2);
-    border: 1px solid rgba(13, 115, 119, 0.3);
+    background: var(--accent-subtle);
+    border: 1px solid var(--accent-border);
     border-radius: 20px;
-    color: var(--deep-teal);
+    color: var(--accent-hover);
     font-family: var(--font-heading);
     font-size: 0.8rem;
     font-weight: 600;
@@ -29,7 +29,7 @@
     gap: 3rem;
     margin-bottom: 4rem;
     padding-bottom: 4rem;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border);
     align-items: start;
 }
 
@@ -64,8 +64,8 @@
     top: 16px;
     left: 16px;
     padding: 6px 14px;
-    background: rgba(20, 39, 78, 0.9);
-    color: var(--warm-gold);
+    background: rgba(13, 14, 20, 0.9);
+    color: var(--accent-hover);
     font-family: var(--font-heading);
     font-size: 0.72rem;
     font-weight: 600;
@@ -80,7 +80,7 @@
 }
 
 .caseLocation {
-    color: var(--deep-teal);
+    color: var(--accent);
     font-weight: 600;
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
@@ -95,7 +95,7 @@
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--deep-teal);
+    color: var(--accent);
     margin-bottom: 0.5rem;
 }
 
@@ -112,8 +112,8 @@
 
 .toolTags span {
     padding: 3px 10px;
-    background: rgba(13, 115, 119, 0.08);
-    color: var(--deep-teal);
+    background: var(--accent-subtle);
+    color: var(--accent);
     font-family: var(--font-mono);
     font-size: 0.75rem;
     border-radius: 5px;
@@ -122,17 +122,18 @@
 
 /* ADDITIONAL PROJECTS */
 .projectCard {
-    background: var(--white);
+    background: var(--bg-card);
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border);
     transition: all 0.3s ease;
 }
 
 .projectCard:hover {
     transform: translateY(-6px);
     box-shadow: var(--shadow-lg);
+    border-color: var(--accent-border);
 }
 
 .projectImage {
@@ -167,7 +168,7 @@
 
 /* CTA */
 .ctaSection {
-    background: var(--deep-teal);
+    background: var(--bg-dark);
     padding: 5rem 0;
 }
 
@@ -178,12 +179,12 @@
 }
 
 .ctaContent h2 {
-    color: var(--white);
+    color: var(--text-on-dark);
     margin-bottom: 1rem;
 }
 
 .ctaContent p {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(226, 227, 237, 0.75);
     font-size: 1.1rem;
     margin-bottom: 2rem;
 }
