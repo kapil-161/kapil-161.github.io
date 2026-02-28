@@ -44,7 +44,6 @@ export default function AboutPage() {
                             </p>
                             <div className={styles.ctaRow}>
                                 <Link href="/contact" className="btn btn-primary">Get In Touch</Link>
-                                <a href="https://drive.google.com/file/d/1LI6PmULK-2fWqLVBl4QPThXP0dptP9Hp/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Download Resume</a>
                             </div>
                         </div>
                     </div>
