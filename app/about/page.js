@@ -37,7 +37,7 @@ export default function AboutPage() {
                                 My journey began in Nepal, where I developed a deep understanding of agriculture at the ground level — working with farmers, understanding soil, and seeing firsthand the challenges of food production. This foundation shaped my mission: to make agriculture smarter through data.
                             </p>
                             <p>
-                                An internship in Israel at Ragolski & Son&apos;s Ltd exposed me to advanced greenhouse operations, hybrid vegetable varieties, and precision growing systems. I saw how technology could transform agricultural productivity at scale.
+                                An internship in Israel at Ragolski & Son&apos;s Ltd exposed me to advanced greenhouse operations, hybrid vegetable varieties, cut flower production, and precision growing systems. I saw how technology could transform agricultural productivity at scale.
                             </p>
                             <p>
                                 Now at the <strong>University of Florida</strong>, I&apos;m pursuing my MS in Agricultural & Biological Engineering as a <strong>UF Fellowship recipient</strong>, specializing in DSSAT crop modeling and predictive analytics for agricultural systems.

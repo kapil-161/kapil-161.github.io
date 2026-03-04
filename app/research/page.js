@@ -61,11 +61,11 @@ export default function ResearchPage() {
                     </div>
                     <div className={styles.pubList}>
                         <div className={styles.pubItem}>
-                            <div className={styles.pubType}>Crop Modeling • Chitwan, Nepal</div>
+                            <div className={styles.pubType}>Field Research • Chitwan, Nepal</div>
                             <h4>Precision Nitrogen Management in Spring Rice</h4>
-                            <p className={styles.pubMeta}>Applied DSSAT decision support tools to model nitrogen dynamics in spring rice (Oryza sativa L.) across multiple management scenarios.
+                            <p className={styles.pubMeta}>Applied precision nitrogen management strategies to optimize fertilizer application in spring rice (Oryza sativa L.) across multiple management scenarios.
                                 Identified optimized application rates that could reduce input costs by 15–20% while maintaining yield. Published in Turkish Journal of Agriculture-Food Science and Technology (2024).</p>
-                            <div className={styles.pubMeta}><strong>Tools:</strong> DSSAT v4.8, Python, R, Field Experiments</div>
+                            <div className={styles.pubMeta}><strong>Tools:</strong> Python, R, Field Experiments</div>
                         </div>
                         <div className={styles.pubItem}>
                             <div className={styles.pubType}>Software Development • University of Florida</div>

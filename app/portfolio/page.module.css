@@ -1,5 +1,5 @@
 .hero {
-    padding: 10rem 0 4rem;
+    padding: 7rem 0 3rem;
     background: var(--bg-dark);
     text-align: center;
 }
@@ -64,7 +64,7 @@
     top: 16px;
     left: 16px;
     padding: 6px 14px;
-    background: rgba(13, 14, 20, 0.9);
+    background: rgba(18, 19, 29, 0.9);
     color: var(--accent-hover);
     font-family: var(--font-heading);
     font-size: 0.72rem;
@@ -169,7 +169,7 @@
 /* CTA */
 .ctaSection {
     background: var(--bg-dark);
-    padding: 5rem 0;
+    padding: 3.5rem 0;
 }
 
 .ctaContent {
@@ -184,7 +184,7 @@
 }
 
 .ctaContent p {
-    color: rgba(226, 227, 237, 0.75);
+    color: var(--text-dim);
     font-size: 1.1rem;
     margin-bottom: 2rem;
 }
