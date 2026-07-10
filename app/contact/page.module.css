@@ -99,6 +99,29 @@
     padding-right: 36px;
 }
 
+.formError {
+    font-size: 0.82rem;
+    color: var(--danger);
+    margin: 0;
+}
+
+.formSuccess {
+    padding: 2.5rem;
+    text-align: center;
+    background: var(--success-subtle);
+    border: 1px solid var(--success);
+    border-radius: var(--border-radius);
+}
+
+.formSuccess h2 {
+    color: var(--success);
+    margin-bottom: 0.5rem;
+}
+
+.formSuccess p {
+    margin: 0;
+}
+
 /* SIDEBAR */
 .sidebar {
     display: flex;

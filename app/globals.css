@@ -28,6 +28,11 @@
   --accent-subtle: rgba(108, 127, 196, 0.12);
   --accent-border: rgba(108, 127, 196, 0.25);
 
+  --danger: #f87171;
+  --danger-subtle: rgba(248, 113, 113, 0.12);
+  --success: #4ade80;
+  --success-subtle: rgba(74, 222, 128, 0.12);
+
   --border: #252636;
   --border-subtle: rgba(255, 255, 255, 0.06);
 
@@ -51,6 +56,11 @@
   --accent-hover: #6c7fc4;
   --accent-subtle: rgba(85, 103, 176, 0.10);
   --accent-border: rgba(85, 103, 176, 0.25);
+
+  --danger: #dc2626;
+  --danger-subtle: rgba(220, 38, 38, 0.08);
+  --success: #16a34a;
+  --success-subtle: rgba(22, 163, 74, 0.08);
 
   --border: #e2e3ed;
   --border-subtle: rgba(0, 0, 0, 0.06);
