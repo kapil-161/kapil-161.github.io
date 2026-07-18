@@ -12,7 +12,7 @@ const caseStudies = [
         id: 'nitrogen-management',
         title: 'Precision Nitrogen Management in Spring Rice',
         location: 'Chitwan, Nepal · Peer-reviewed, 2024',
-        badge: 'DSSAT & Field Research',
+        badge: 'DSS Tools & Field Research',
         image: '/images/portfolio_item1.webp',
         imageWidth: 800,
         imageHeight: 1126,

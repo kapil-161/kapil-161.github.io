@@ -127,7 +127,7 @@ export default function HomePage() {
             <div className={styles.caseCard}>
               <div className={styles.caseImage}>
                 <Image src="/images/portfolio_item1.webp" alt="Precision Nitrogen Management in Spring Rice" width={400} height={260} />
-                <span className={styles.caseBadge}>DSSAT</span>
+                <span className={styles.caseBadge}>DSS Tools</span>
               </div>
               <div className={styles.caseContent}>
                 <h4>Precision Nitrogen Management in Spring Rice</h4>

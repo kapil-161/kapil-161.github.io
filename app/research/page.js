@@ -128,6 +128,22 @@ export default function ResearchPage() {
                         <div className={styles.timelineItem}>
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
+                                <span className={styles.timelineDate}>May 18-23, 2026</span>
+                                <h4>Faculty — DSSAT 2026 International Training Program, University of Georgia</h4>
+                                <p>Served as faculty for the 6-day intensive DSSAT International Training Program in Griffin, GA, supporting graduate participants through hands-on sessions on crop simulation modeling, G×E×M interactions, and DSSAT applications.</p>
+                            </div>
+                        </div>
+                        <div className={styles.timelineItem}>
+                            <div className={styles.timelineDot}></div>
+                            <div className={styles.timelineContent}>
+                                <span className={styles.timelineDate}>March 2026</span>
+                                <h4>Poster Presentation — ABE Symposium, University of Florida</h4>
+                                <p>Presented poster on &quot;Development of a Model for Simulating Lettuce Growth and Yield Under Hydroponic Settings.&quot;</p>
+                            </div>
+                        </div>
+                        <div className={styles.timelineItem}>
+                            <div className={styles.timelineDot}></div>
+                            <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>November 16-21, 2025</span>
                                 <h4>Crop Physiology Training — Wageningen University & UF</h4>
                                 <p>Earned 1.5 ECTS credits through a joint program by Wageningen University&apos;s PE&RC and UF&apos;s ABE Department.</p>
@@ -145,7 +161,7 @@ export default function ResearchPage() {
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>May 19-24, 2025</span>
-                                <h4>DSSAT Training — University of Georgia</h4>
+                                <h4>DSSAT 2025 International Training Program — University of Georgia</h4>
                                 <p>Completed intensive DSSAT training alongside 72 participants from 28 countries, covering potential production to model applications.</p>
                             </div>
                         </div>
@@ -161,7 +177,7 @@ export default function ResearchPage() {
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>March 2025</span>
-                                <h4>Poster Presentation — University of Florida</h4>
+                                <h4>Poster Presentation — ABE Symposium, University of Florida</h4>
                                 <p>Presented poster on &quot;Evaluating the Performance of the DSSAT Cropping System Model.&quot;</p>
                             </div>
                         </div>
