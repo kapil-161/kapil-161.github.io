@@ -171,11 +171,6 @@ export default function HomePage() {
           </div>
           <div className={styles.impactGrid}>
             <div className={styles.impactCard}>
-              <span className={styles.impactNumber}>99.3%</span>
-              <span className={styles.impactLabel}>Classifier accuracy</span>
-              <span className={styles.impactDesc}>DNA sequence classifier across 7 classes, evaluated with a confusion matrix.</span>
-            </div>
-            <div className={styles.impactCard}>
               <span className={styles.impactNumber}>33%</span>
               <span className={styles.impactLabel}>Less nitrogen applied</span>
               <span className={styles.impactDesc}>SPAD-guided precision nitrogen management cut applied N from 120 to 80 kg/ha in spring rice with no yield loss — first-authored, peer-reviewed study (2024).</span>
