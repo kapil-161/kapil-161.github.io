@@ -22,7 +22,6 @@ export default function HomePage() {
               </p>
               <div className={styles.heroBtns}>
                 <Link href="/portfolio" className="btn btn-secondary btn-lg">View My Work</Link>
-                <a href="/kapil-bhattarai-resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">View Resume</a>
               </div>
               <p className={styles.heroCredential}>
                 MS in Agricultural & Biological Engineering, University of Florida • UF Fellowship Recipient
