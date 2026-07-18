@@ -39,11 +39,11 @@ function MoonIcon() {
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState('light');
     const pathname = usePathname();
 
     useEffect(() => {
-        const saved = localStorage.getItem('theme') || 'dark';
+        const saved = localStorage.getItem('theme') || 'light';
         setTheme(saved);
     }, []);
 
