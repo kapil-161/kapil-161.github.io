@@ -176,9 +176,9 @@ export default function HomePage() {
               <span className={styles.impactDesc}>DNA sequence classifier across 7 classes, evaluated with a confusion matrix.</span>
             </div>
             <div className={styles.impactCard}>
-              <span className={styles.impactNumber}>15–20%</span>
-              <span className={styles.impactLabel}>Input-cost reduction</span>
-              <span className={styles.impactDesc}>Estimated fertilizer savings from precision nitrogen management in rice using SPAD, GreenSeeker (NDVI), and leaf color chart tools.</span>
+              <span className={styles.impactNumber}>33%</span>
+              <span className={styles.impactLabel}>Less nitrogen applied</span>
+              <span className={styles.impactDesc}>SPAD-guided precision nitrogen management cut applied N from 120 to 80 kg/ha in spring rice with no yield loss — first-authored, peer-reviewed study (2024).</span>
             </div>
             <div className={styles.impactCard}>
               <span className={styles.impactNumber}>10</span>
