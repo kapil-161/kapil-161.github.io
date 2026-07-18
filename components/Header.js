@@ -110,7 +110,7 @@ export default function Header() {
                         rel="noopener noreferrer"
                         className={styles.navLink}
                     >
-                        Résumé
+                        Resume
                     </a>
                     <button
                         className={styles.themeToggle}
