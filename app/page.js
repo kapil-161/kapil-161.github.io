@@ -178,7 +178,7 @@ export default function HomePage() {
             <div className={styles.impactCard}>
               <span className={styles.impactNumber}>15–20%</span>
               <span className={styles.impactLabel}>Input-cost reduction</span>
-              <span className={styles.impactDesc}>Estimated savings from DSSAT-guided precision nitrogen management in spring rice.</span>
+              <span className={styles.impactDesc}>Estimated fertilizer savings from precision nitrogen management in rice using SPAD, GreenSeeker (NDVI), and leaf color chart tools.</span>
             </div>
             <div className={styles.impactCard}>
               <span className={styles.impactNumber}>10</span>
