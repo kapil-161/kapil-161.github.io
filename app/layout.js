@@ -1,7 +1,12 @@
 import './globals.css';
+import { Inter, Source_Sans_3, JetBrains_Mono } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
+const sourceSans = Source_Sans_3({ subsets: ['latin'], variable: '--font-source-sans', display: 'swap' });
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrains', display: 'swap' });
 
 export const metadata = {
   metadataBase: new URL('https://bhattaraikapil.com.np'),
@@ -33,11 +38,12 @@ export const metadata = {
     title: 'Kapil Bhattarai | Agricultural Data Scientist & Crop Modeling Consultant',
     description:
       'Crop modeling (DSSAT), geospatial analytics, and machine learning solutions for agriculture.',
-    images: [{ url: '/images/hero_profile.webp', width: 400, height: 407 }],
+    images: [{ url: '/images/og_image.png', width: 1200, height: 630, alt: 'Kapil Bhattarai — Agricultural Data Scientist' }],
   },
   twitter: {
     card: 'summary_large_image',
     creator: '@KD_Bhattarai',
+    images: ['/images/og_image.png'],
   },
   icons: {
     icon: '/images/favicon.png',
@@ -46,7 +52,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${sourceSans.variable} ${jetbrainsMono.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: `(function(){var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-theme',t);})();` }} />
         <script

@@ -131,7 +131,7 @@ export default function HomePage() {
               </div>
               <div className={styles.caseContent}>
                 <h4>Precision Nitrogen Management in Spring Rice</h4>
-                <p>Used DSSAT decision support tools to optimize nitrogen application in Chitwan, Nepal, reducing input costs by estimated 15-20%.</p>
+                <p>Used SPAD-guided decision support tools to optimize nitrogen application in spring rice in Chitwan, Nepal — cutting applied nitrogen by 33% (120 to 80 kg/ha) with no yield loss.</p>
                 <Link href="/portfolio#nitrogen-management" className={styles.cardLink}>Read Case Study →</Link>
               </div>
             </div>

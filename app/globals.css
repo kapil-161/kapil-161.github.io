@@ -3,9 +3,6 @@
    Muted Dark Monochrome + Light Mode
    =========================== */
 
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
-
 /* ===========================
    CSS VARIABLES
    =========================== */
@@ -72,9 +69,9 @@
 
 :root {
   /* Typography */
-  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-heading: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: var(--font-source-sans), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
 
   /* Spacing */
   --space-xs: 0.25rem;

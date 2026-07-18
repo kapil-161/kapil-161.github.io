@@ -42,14 +42,13 @@ export default function ContactForm() {
             </div>
 
             <div className={styles.formGroup}>
-                <label htmlFor="budget">Budget Range</label>
-                <select id="budget" name="budget">
-                    <option value="">Select a range...</option>
-                    <option value="under-1k">Under $1,000</option>
-                    <option value="1k-5k">$1,000 - $5,000</option>
-                    <option value="5k-10k">$5,000 - $10,000</option>
-                    <option value="10k+">$10,000+</option>
-                    <option value="discuss">Let&apos;s discuss</option>
+                <label htmlFor="inquiry-type">I&apos;m reaching out about</label>
+                <select id="inquiry-type" name="inquiry-type">
+                    <option value="">Select one...</option>
+                    <option value="role">A job or role opportunity</option>
+                    <option value="collaboration">A research collaboration</option>
+                    <option value="consulting">A consulting project</option>
+                    <option value="other">Something else</option>
                 </select>
             </div>
 
