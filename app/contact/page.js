@@ -3,7 +3,7 @@ import ContactForm from './ContactForm';
 
 export const metadata = {
     title: 'Contact',
-    description: 'Get in touch with Kapil Bhattarai for crop modeling, geospatial analytics, data science projects, or training. Book a free consultation.',
+    description: 'Get in touch with Kapil Bhattarai about agricultural data science and crop-modeling roles, research collaborations, or projects.',
 };
 
 export default function ContactPage() {

@@ -2,8 +2,8 @@ import styles from './page.module.css';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Services',
-    description: 'Professional services in crop modeling (DSSAT), geospatial analytics, agricultural data science, and training from Kapil Bhattarai.',
+    title: 'Capabilities',
+    description: 'Technical capabilities of Kapil Bhattarai in crop modeling (DSSAT), geospatial analytics and remote sensing, agricultural data science, and machine learning.',
 };
 
 export default function ServicesPage() {
@@ -12,10 +12,10 @@ export default function ServicesPage() {
             <section className={styles.hero}>
                 <div className="container">
                     <div className="section-header">
-                        <span className={styles.badge}>Services</span>
+                        <span className={styles.badge}>Capabilities</span>
                         <h1>Turning Agricultural Data Into Decisions</h1>
                         <p style={{ color: 'rgba(226, 227, 237, 0.7)', maxWidth: '600px', margin: '0 auto' }}>
-                            I help agriculture organizations, research institutions, and agribusinesses make smarter decisions through precision agriculture and data science.
+                            The technical skills I bring to agricultural research and ag-tech teams — spanning crop simulation, geospatial analysis, and machine learning.
                         </p>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ export default function ServicesPage() {
                             <div className={styles.serviceContent}>
                                 <h3>Crop Modeling & DSSAT</h3>
                                 <p className={styles.serviceLead}>Calibration, validation, and scenario analysis for crop simulation models.</p>
-                                <h5>What I Deliver</h5>
+                                <h5>What I Do</h5>
                                 <ul className={styles.deliverables}>
                                     <li>DSSAT model setup, calibration, and validation for your specific crop and region</li>
                                     <li>Climate change scenario modeling and yield forecasting</li>
@@ -45,7 +45,7 @@ export default function ServicesPage() {
                                     <span>R</span>
                                     <span>Fortran</span>
                                 </div>
-                                <Link href="/contact" className="btn btn-primary btn-sm">Get a Modeling Quote</Link>
+                                <Link href="/portfolio" className="btn btn-primary btn-sm">See Related Work</Link>
                             </div>
                         </div>
 
@@ -55,7 +55,7 @@ export default function ServicesPage() {
                             <div className={styles.serviceContent}>
                                 <h3>Geospatial & Remote Sensing</h3>
                                 <p className={styles.serviceLead}>Satellite imagery analysis, GIS mapping, and spatial data pipelines for agricultural applications.</p>
-                                <h5>What I Deliver</h5>
+                                <h5>What I Do</h5>
                                 <ul className={styles.deliverables}>
                                     <li>Land use and land cover mapping using satellite imagery</li>
                                     <li>NDVI analysis and crop health monitoring</li>
@@ -71,7 +71,7 @@ export default function ServicesPage() {
                                     <span>GeoPandas</span>
                                     <span>Google Earth Engine</span>
                                 </div>
-                                <Link href="/contact" className="btn btn-primary btn-sm">Explore GIS Solutions</Link>
+                                <Link href="/portfolio" className="btn btn-primary btn-sm">See Related Work</Link>
                             </div>
                         </div>
 
@@ -81,7 +81,7 @@ export default function ServicesPage() {
                             <div className={styles.serviceContent}>
                                 <h3>Ag Data Science & Machine Learning</h3>
                                 <p className={styles.serviceLead}>Predictive modeling, data visualization dashboards, and ML pipelines for agricultural research.</p>
-                                <h5>What I Deliver</h5>
+                                <h5>What I Do</h5>
                                 <ul className={styles.deliverables}>
                                     <li>Crop yield prediction models using machine learning</li>
                                     <li>Statistical analysis of field experimental data</li>
@@ -97,7 +97,7 @@ export default function ServicesPage() {
                                     <span>R / Shiny</span>
                                     <span>SQL</span>
                                 </div>
-                                <Link href="/contact" className="btn btn-primary btn-sm">Start a Data Project</Link>
+                                <Link href="/portfolio" className="btn btn-primary btn-sm">See Related Work</Link>
                             </div>
                         </div>
 
@@ -107,7 +107,7 @@ export default function ServicesPage() {
                             <div className={styles.serviceContent}>
                                 <h3>Training & Workshops</h3>
                                 <p className={styles.serviceLead}>Hands-on training sessions in DSSAT modeling, data analysis, and agricultural technology.</p>
-                                <h5>What I Deliver</h5>
+                                <h5>What I Do</h5>
                                 <ul className={styles.deliverables}>
                                     <li>DSSAT model setup and operation workshops</li>
                                     <li>Data analysis with R and Python for agricultural researchers</li>
@@ -122,7 +122,7 @@ export default function ServicesPage() {
                                     <span>Group</span>
                                     <span>One-on-One</span>
                                 </div>
-                                <Link href="/contact" className="btn btn-primary btn-sm">Book a Session</Link>
+                                <Link href="/portfolio" className="btn btn-primary btn-sm">See Related Work</Link>
                             </div>
                         </div>
                     </div>
@@ -133,9 +133,9 @@ export default function ServicesPage() {
             <section className={styles.ctaSection}>
                 <div className="container">
                     <div className={styles.ctaContent}>
-                        <h2>Not Sure Which Service You Need?</h2>
-                        <p>Book a free 30-minute discovery call and I&apos;ll help you figure out the best approach for your project.</p>
-                        <Link href="/contact" className="btn btn-gold btn-lg">Schedule a Free Call</Link>
+                        <h2>Think These Skills Fit Your Team?</h2>
+                        <p>I&apos;m open to ag-tech data science and crop-modeling roles. I&apos;d be glad to discuss how I can contribute.</p>
+                        <Link href="/contact" className="btn btn-gold btn-lg">Get In Touch</Link>
                     </div>
                 </div>
             </section>

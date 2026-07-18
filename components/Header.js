@@ -104,6 +104,14 @@ export default function Header() {
                             </Link>
                         );
                     })}
+                    <a
+                        href="/kapil-bhattarai-resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.navLink}
+                    >
+                        Résumé
+                    </a>
                     <button
                         className={styles.themeToggle}
                         onClick={toggleTheme}

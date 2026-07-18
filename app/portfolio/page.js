@@ -10,7 +10,7 @@ export const metadata = {
 const projects = [
     {
         title: 'DSSAT Graphical Visualization GB2',
-        desc: 'Contributing to DSSAT v4.8.6 by building enhanced graphical visualization capabilities for the global crop modeling research community.',
+        desc: 'Contributing to the open-source DSSAT v4.8.6 crop model — used by agricultural researchers worldwide — by building enhanced graphical visualization tools for simulation output.',
         tags: ['Python', 'DSSAT', 'Data Viz', 'Fortran'],
         image: '/images/gb2_screenshot.webp',
     },
@@ -22,7 +22,7 @@ const projects = [
     },
     {
         title: 'Remote Sensing Analysis',
-        desc: 'Satellite imagery analysis for agricultural monitoring using NDVI and land cover classification techniques.',
+        desc: 'Satellite imagery analysis for crop monitoring using NDVI time series and supervised land-cover classification.',
         tags: ['Remote Sensing', 'Python', 'GIS'],
         image: '/images/portfolio_item8.webp',
     },
@@ -93,9 +93,9 @@ export default function PortfolioPage() {
             <section className={styles.ctaSection}>
                 <div className="container">
                     <div className={styles.ctaContent}>
-                        <h2>Have a Similar Project in Mind?</h2>
-                        <p>Let&apos;s discuss how I can help you achieve your goals with data-driven approaches.</p>
-                        <Link href="/contact" className="btn btn-gold btn-lg">Start a Conversation</Link>
+                        <h2>Want to Discuss My Work?</h2>
+                        <p>I&apos;m open to ag-tech data science and crop-modeling roles. Happy to walk through any of these projects in detail.</p>
+                        <Link href="/contact" className="btn btn-gold btn-lg">Get In Touch</Link>
                     </div>
                 </div>
             </section>

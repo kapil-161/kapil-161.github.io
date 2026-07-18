@@ -15,13 +15,14 @@ export default function HomePage() {
         <div className={`container ${styles.heroContent}`}>
           <div className={styles.heroGrid}>
             <div className={styles.heroText}>
-              <span className={styles.heroBadge}>MS Student • University of Florida</span>
-              <h1>Turn Field Data Into <span className={styles.heroHighlight}>Actionable Intelligence</span></h1>
+              <span className={styles.heroBadge}>Agricultural Data Scientist • Open to Ag-Tech Roles</span>
+              <h1>Turning Field Data Into <span className={styles.heroHighlight}>Actionable Intelligence</span></h1>
               <p className={styles.heroSub}>
-                Crop modeling (DSSAT), precision agriculture, geospatial analytics, and machine learning solutions for agribusinesses, research institutions, and government agencies.
+                MS researcher in crop modeling (DSSAT), geospatial analytics, and machine learning — building models that turn field, satellite, and weather data into better crop-management decisions.
               </p>
               <div className={styles.heroBtns}>
                 <Link href="/portfolio" className="btn btn-secondary btn-lg">View My Work</Link>
+                <a href="/kapil-bhattarai-resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">View Résumé</a>
               </div>
               <p className={styles.heroCredential}>
                 MS in Agricultural & Biological Engineering, University of Florida • UF Fellowship Recipient
@@ -85,7 +86,7 @@ export default function HomePage() {
         <div className="container">
           <div className="section-header">
             <h2>What I Do</h2>
-            <p>Specialized services at the intersection of agriculture, data science, and technology.</p>
+            <p>Core areas of expertise at the intersection of agriculture, data science, and technology.</p>
           </div>
           <div className="grid-3">
             <div className={`card ${styles.serviceCard}`}>
@@ -161,16 +162,29 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* TESTIMONIAL */}
-      <section className={`section section-dark ${styles.testimonialSection}`}>
+      {/* IMPACT METRICS */}
+      <section className={`section section-dark ${styles.impactSection}`}>
         <div className="container">
-          <div className={styles.testimonialCard}>
-            <div className={styles.quoteIcon}>❝</div>
-            <blockquote className={styles.testimonialQuote}>
-              {/* [TODO] Replace with a real testimonial from a professor or supervisor */}
-              I demonstrate exceptional analytical skills and a deep understanding of crop modeling systems. My ability to bridge field research with data-driven insights makes me a valuable asset to any agricultural research team.
-            </blockquote>
-
+          <div className="section-header">
+            <h2>Measured Impact</h2>
+            <p>Selected outcomes from applied crop-modeling, machine learning, and remote-sensing work.</p>
+          </div>
+          <div className={styles.impactGrid}>
+            <div className={styles.impactCard}>
+              <span className={styles.impactNumber}>99.3%</span>
+              <span className={styles.impactLabel}>Classifier accuracy</span>
+              <span className={styles.impactDesc}>DNA sequence classifier across 7 classes, evaluated with a confusion matrix.</span>
+            </div>
+            <div className={styles.impactCard}>
+              <span className={styles.impactNumber}>15–20%</span>
+              <span className={styles.impactLabel}>Input-cost reduction</span>
+              <span className={styles.impactDesc}>Estimated savings from DSSAT-guided precision nitrogen management in spring rice.</span>
+            </div>
+            <div className={styles.impactCard}>
+              <span className={styles.impactNumber}>10</span>
+              <span className={styles.impactLabel}>Crop diseases detected</span>
+              <span className={styles.impactDesc}>Offline CNN (TensorFlow Lite) classifying diseases across potato, pepper, and tomato.</span>
+            </div>
           </div>
         </div>
       </section>
@@ -179,8 +193,8 @@ export default function HomePage() {
       <section className={styles.ctaSection}>
         <div className="container">
           <div className={styles.ctaContent}>
-            <h2>Ready to Leverage Data for Better Agricultural Outcomes?</h2>
-            <p>Let&apos;s discuss how data science and crop modeling can transform your agricultural research or operations.</p>
+            <h2>Looking for a Data Scientist Who Knows Agriculture?</h2>
+            <p>I&apos;m open to ag-tech data science and crop-modeling roles. Let&apos;s talk about how I can contribute to your team.</p>
             <Link href="/contact" className="btn btn-gold btn-lg">Get In Touch</Link>
           </div>
         </div>

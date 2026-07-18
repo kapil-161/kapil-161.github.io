@@ -2,7 +2,6 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
-import DisableRightClick from '@/components/DisableRightClick';
 
 export const metadata = {
   metadataBase: new URL('https://bhattaraikapil.com.np'),
@@ -76,7 +75,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <DisableRightClick />
         <Header />
         <main>{children}</main>
         <Footer />
