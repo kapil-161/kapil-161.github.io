@@ -5,6 +5,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Work',
     description: 'Applied projects and case studies by Kapil Bhattarai in agricultural data science, crop modeling (DSSAT), machine learning, app development, and geospatial analysis.',
+    alternates: { canonical: '/portfolio' },
 };
 
 const caseStudies = [

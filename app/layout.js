@@ -30,6 +30,9 @@ export const metadata = {
   ],
   authors: [{ name: 'Kapil Bhattarai' }],
   creator: 'Kapil Bhattarai',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

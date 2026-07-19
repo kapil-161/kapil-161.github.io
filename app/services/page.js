@@ -4,6 +4,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Capabilities',
     description: 'Technical capabilities of Kapil Bhattarai in crop modeling (DSSAT), geospatial analytics and remote sensing, agricultural data science, and machine learning.',
+    alternates: { canonical: '/services' },
 };
 
 export default function ServicesPage() {

@@ -5,6 +5,7 @@ export const metadata = {
     title: 'Blog',
     description: 'Articles, tutorials, and insights on crop modeling, DSSAT, precision agriculture, geospatial analytics, and agricultural data science by Kapil Bhattarai.',
     robots: { index: false, follow: true },
+    alternates: { canonical: '/blog' },
 };
 
 const blogPosts = [

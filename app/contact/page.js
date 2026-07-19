@@ -4,6 +4,7 @@ import ContactForm from './ContactForm';
 export const metadata = {
     title: 'Contact',
     description: 'Get in touch with Kapil Bhattarai about agricultural data science and crop-modeling roles, research collaborations, or projects.',
+    alternates: { canonical: '/contact' },
 };
 
 export default function ContactPage() {

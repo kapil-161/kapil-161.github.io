@@ -4,6 +4,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'Research & Publications',
     description: 'Research interests, publications, presentations, and academic work by Kapil Bhattarai in crop modeling, precision agriculture, and agricultural data science.',
+    alternates: { canonical: '/research' },
 };
 
 export default function ResearchPage() {

@@ -5,6 +5,7 @@ import Link from 'next/link';
 export const metadata = {
     title: 'About',
     description: 'Learn about Kapil Bhattarai - Agricultural Data Scientist specializing in crop modeling (DSSAT), geospatial analytics, and machine learning at the University of Florida.',
+    alternates: { canonical: '/about' },
 };
 
 export default function AboutPage() {
