@@ -11,16 +11,16 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jet
 export const metadata = {
   metadataBase: new URL('https://bhattaraikapil.com.np'),
   title: {
-    default: 'Kapil Bhattarai | Agricultural Data Scientist & Crop Modeling Consultant',
+    default: 'Kapil Bhattarai | Agricultural Data Scientist & Crop Modeling Researcher',
     template: '%s | Kapil Bhattarai',
   },
   description:
-    'Agricultural Data Scientist specializing in crop modeling (DSSAT), geospatial analytics, and machine learning solutions for agribusinesses, research institutions, and government agencies.',
+    'Agricultural Data Scientist and MS researcher specializing in crop modeling (DSSAT), geospatial analytics, and machine learning for agriculture. Open to ag-tech data science roles.',
   keywords: [
     'Kapil Bhattarai',
     'agricultural data scientist',
-    'crop modeling consultant',
-    'DSSAT expert',
+    'crop modeling researcher',
+    'DSSAT researcher',
     'precision agriculture',
     'geospatial analytics',
     'machine learning agriculture',
@@ -38,9 +38,9 @@ export const metadata = {
     locale: 'en_US',
     url: 'https://bhattaraikapil.com.np',
     siteName: 'Kapil Bhattarai',
-    title: 'Kapil Bhattarai | Agricultural Data Scientist & Crop Modeling Consultant',
+    title: 'Kapil Bhattarai | Agricultural Data Scientist & Crop Modeling Researcher',
     description:
-      'Crop modeling (DSSAT), geospatial analytics, and machine learning solutions for agriculture.',
+      'Crop modeling (DSSAT), geospatial analytics, and machine learning research in agriculture.',
     images: [{ url: '/images/og_image.png', width: 1200, height: 630, alt: 'Kapil Bhattarai — Agricultural Data Scientist' }],
   },
   twitter: {
