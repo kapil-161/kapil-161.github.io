@@ -39,6 +39,7 @@ export default function Footer() {
                         <a href="https://scholar.google.com/citations?user=vqVzA0gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
                         <a href="https://www.researchgate.net/profile/Kapil-Bhattarai-5" target="_blank" rel="noopener noreferrer">ResearchGate</a>
                         <a href="https://www.youtube.com/@AFUStudio" target="_blank" rel="noopener noreferrer">YouTube</a>
+                        <a href="https://www.facebook.com/AFUPodcast" target="_blank" rel="noopener noreferrer">Facebook</a>
                     </div>
                 </div>
 

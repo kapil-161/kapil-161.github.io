@@ -78,6 +78,7 @@ export default function RootLayout({ children }) {
                 'https://github.com/kapil-161',
                 'https://twitter.com/KD_Bhattarai',
                 'https://www.youtube.com/@AFUStudio',
+                'https://www.facebook.com/AFUPodcast',
               ],
             }),
           }}
