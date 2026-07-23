@@ -26,7 +26,7 @@ function Pin({ position, label }) {
         <sphereGeometry args={[0.035, 12, 12]} />
         <meshBasicMaterial color={ACCENT_HOVER} />
       </mesh>
-      <Html distanceFactor={9} occlude="blending" style={{ pointerEvents: 'none' }}>
+      <Html occlude="blending" style={{ pointerEvents: 'none' }}>
         <span
           style={{
             fontSize: '9px',
@@ -75,12 +75,8 @@ function GlobeGroup({ locations }) {
   return (
     <group rotation={[0, 0, 0.35]}>
       <mesh>
-        <sphereGeometry args={[RADIUS * 0.985, 48, 48]} />
-        <meshStandardMaterial color="#181926" roughness={0.85} metalness={0.1} />
-      </mesh>
-      <mesh>
-        <sphereGeometry args={[RADIUS, 32, 32]} />
-        <meshBasicMaterial color={ACCENT} wireframe transparent opacity={0.28} />
+        <sphereGeometry args={[RADIUS, 40, 40]} />
+        <meshBasicMaterial color={ACCENT} wireframe transparent opacity={0.45} />
       </mesh>
       {points.map((p) => (
         <Pin key={p.name} position={p.vec.clone().multiplyScalar(1.02)} label={p.name} />
