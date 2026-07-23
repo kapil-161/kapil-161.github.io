@@ -1,0 +1,72 @@
+.globeSection {
+  overflow: hidden;
+}
+
+.globeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.globeText p {
+  max-width: 480px;
+}
+
+.globeText h2 {
+  margin: 1rem 0 1.25rem;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.globeList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.globeList li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text-dim);
+  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+}
+
+.globeDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-hover);
+  box-shadow: 0 0 8px var(--accent-hover);
+  flex-shrink: 0;
+}
+
+.globeCanvas {
+  position: relative;
+  height: 420px;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+}
+
+.canvasFallback {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .globeGrid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .globeList {
+    align-items: center;
+  }
+
+  .globeCanvas {
+    height: 320px;
+  }
+}
