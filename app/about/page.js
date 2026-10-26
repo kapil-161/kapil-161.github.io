@@ -63,6 +63,21 @@ export default function AboutPage() {
                         <div className={styles.expItem}>
                             <div className={styles.expHeader}>
                                 <div className={styles.expMeta}>
+                                    <h3>Graduate Research Assistant</h3>
+                                    <span className={styles.expCompany}>Dept. of Agricultural &amp; Biological Engineering, University of Florida — Advisor: Dr. Gerrit Hoogenboom</span>
+                                </div>
+                                <span className={styles.expDate}>Jan 2025 – Present</span>
+                            </div>
+                            <ul className={styles.expPoints}>
+                                <li>Conducting thesis research on developing a process-based model for lettuce growth under hydroponics settings.</li>
+                                <li>Developing an enhanced graphical visualization tool (GB2) for DSSAT v4.8.6, with a modern UI and improved data processing capabilities for crop model development and large-scale data analysis.</li>
+                                <li>Provided technical guidance and DSSAT training to visiting scholars in the Crop Simulation Laboratory.</li>
+                            </ul>
+                        </div>
+
+                        <div className={styles.expItem}>
+                            <div className={styles.expHeader}>
+                                <div className={styles.expMeta}>
                                     <h3>Nursery Manager</h3>
                                     <span className={styles.expCompany}>Plant Paradise — Kadaghari, Kathmandu, Nepal</span>
                                 </div>
