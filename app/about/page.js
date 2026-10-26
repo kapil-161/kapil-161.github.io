@@ -193,6 +193,16 @@ export default function AboutPage() {
                     <div className={styles.certCards}>
                         <div className={styles.certCard}>
                             <div className={styles.certImage}>
+                                <Image src="/images/cert_one_health_third_place.webp" alt="Third Place Award, 2026 One Health Case Competition, University of Florida" width={800} height={626} className={styles.certPhoto} />
+                            </div>
+                            <div className={styles.certItem}>
+                                <span className={styles.certBadge}>UF One Health</span>
+                                <h4>Third Place, 2026 One Health Case Competition</h4>
+                                <p>Team &ldquo;Drought Defenders&rdquo; placed third at the UF One Health Case Competition, October 23&ndash;24, 2026. <a href="https://phhp.ufl.edu/events/13496/uf-one-health-case-competition-2026/" target="_blank" rel="noopener noreferrer">Event details</a></p>
+                            </div>
+                        </div>
+                        <div className={styles.certCard}>
+                            <div className={styles.certImage}>
                                 <Image src="/images/cert_ai_fluency_foundations.webp" alt="AI Fluency: Framework & Foundations - Anthropic Certificate" width={800} height={589} className={styles.certPhoto} />
                             </div>
                             <div className={styles.certItem}>
