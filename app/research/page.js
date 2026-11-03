@@ -231,7 +231,7 @@ export default function ResearchPage() {
                             <div className={styles.pubType}>Journal Article • 2025</div>
                             <h4>Effects of ethephon and pruning practices on sex expression and yield of cucumber (Cucumis sativus L.) in Rupandehi, Nepal</h4>
                             <p className={styles.pubMeta}>Gyawali, K., Dhital, P. R., Bhattarai, K., &amp; Baral, S. (2025)</p>
-                            <p className={styles.pubMeta}><em>Turkish Journal of Agriculture-Food Science and Technology</em>, 13(2), 346–352 &bull; DOI: <a href="https://doi.org/10.24925/turjaf.v13i2.346-352.7179" target="_blank" rel="noopener noreferrer">https://doi.org/10.24925/turjaf.v13i2.346-352.7179</a></p>
+                            <p className={styles.pubMeta}><em>Turkish Journal of Agriculture-Food Science and Technology</em>, 13(2), 346–352 &bull; DOI: <a href="https://doi.org/10.24925/turjaf.v13i2.346-352.7179" target="_blank" rel="noopener noreferrer">https://doi.org/10.24925/turjaf.v13i2.346-352.7179</a> &bull; Cited: 1</p>
                         </div>
                         <div className={styles.pubItem}>
                             <div className={styles.pubType}>Journal Article • 2024</div>
@@ -243,7 +243,7 @@ export default function ResearchPage() {
                             <div className={styles.pubType}>Journal Article • 2022</div>
                             <h4>Effects of various fertilizer combinations on okra (Abelmoschus esculentus L.) varieties for dietary fiber content and vegetative characteristic</h4>
                             <p className={styles.pubMeta}>Regmi, B., Bhattarai, K., Bhusal, N. R., Poudel, S. R., &amp; Kunwar, S. (2022)</p>
-                            <p className={styles.pubMeta}><em>Himalayan Journal of Science and Technology</em>, 6(1), 75–86 &bull; DOI: <a href="https://doi.org/10.3126/hijost.v6i1.50658" target="_blank" rel="noopener noreferrer">https://doi.org/10.3126/hijost.v6i1.50658</a></p>
+                            <p className={styles.pubMeta}><em>Himalayan Journal of Science and Technology</em>, 6(1), 75–86 &bull; DOI: <a href="https://doi.org/10.3126/hijost.v6i1.50658" target="_blank" rel="noopener noreferrer">https://doi.org/10.3126/hijost.v6i1.50658</a> &bull; Cited: 1</p>
                         </div>
                         <div className={styles.pubItem}>
                             <div className={styles.pubType}>Poster Presentation • 2025</div>
