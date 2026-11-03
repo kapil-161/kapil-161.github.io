@@ -7,9 +7,145 @@ export const metadata = {
     alternates: { canonical: '/research' },
 };
 
+const PERSON_ID = 'https://bhattaraikapil.com.np/#person';
+
+const personNode = {
+    '@type': 'Person',
+    '@id': PERSON_ID,
+    name: 'Kapil Bhattarai',
+    url: 'https://bhattaraikapil.com.np',
+    jobTitle: 'Agricultural Data Scientist',
+    identifier: {
+        '@type': 'PropertyValue',
+        propertyID: 'ORCID',
+        value: 'https://orcid.org/0000-0001-5067-1679',
+    },
+    sameAs: [
+        'https://www.linkedin.com/in/kapil-bhattarai-792417192/',
+        'https://github.com/kapil-161',
+        'https://twitter.com/KD_Bhattarai',
+        'https://www.youtube.com/@AFUStudio',
+        'https://orcid.org/0000-0001-5067-1679',
+        'https://www.researchgate.net/profile/Kapil-Bhattarai-5',
+        'https://scholar.google.com/citations?user=vqVzA0gAAAAJ&hl=en',
+    ],
+};
+
+const articleNodes = [
+    {
+        '@type': 'ScholarlyArticle',
+        headline: 'Impact of weed management practices on the growth and yield of spring rice in Pyuthan, Nepal',
+        identifier: 'https://doi.org/10.48309/jase.2025.502426.1066',
+        url: 'https://doi.org/10.48309/jase.2025.502426.1066',
+        datePublished: '2025',
+        author: [
+            { '@type': 'Person', name: 'N. R. Bhusal' },
+            { '@type': 'Person', name: 'M. R. Pokhrel' },
+            { '@type': 'Person', name: 'R. Chaudhary' },
+            { '@id': PERSON_ID },
+            { '@type': 'Person', name: 'P. Timalsina' },
+        ],
+        isPartOf: {
+            '@type': 'PublicationIssue',
+            issueNumber: '3',
+            isPartOf: {
+                '@type': ['PublicationVolume', 'Periodical'],
+                volumeNumber: '7',
+                name: 'Journal of Agricultural Sciences and Engineering',
+            },
+        },
+        pageStart: '150',
+        pageEnd: '164',
+    },
+    {
+        '@type': 'ScholarlyArticle',
+        headline: 'Effects of ethephon and pruning practices on sex expression and yield of cucumber (Cucumis sativus L.) in Rupandehi, Nepal',
+        identifier: 'https://doi.org/10.24925/turjaf.v13i2.346-352.7179',
+        url: 'https://doi.org/10.24925/turjaf.v13i2.346-352.7179',
+        datePublished: '2025-02-28',
+        author: [
+            { '@type': 'Person', name: 'K. Gyawali' },
+            { '@type': 'Person', name: 'P. R. Dhital' },
+            { '@id': PERSON_ID },
+            { '@type': 'Person', name: 'S. Baral' },
+        ],
+        isPartOf: {
+            '@type': 'PublicationIssue',
+            issueNumber: '2',
+            isPartOf: {
+                '@type': ['PublicationVolume', 'Periodical'],
+                volumeNumber: '13',
+                name: 'Turkish Journal of Agriculture-Food Science and Technology',
+            },
+        },
+        pageStart: '346',
+        pageEnd: '352',
+    },
+    {
+        '@type': 'ScholarlyArticle',
+        headline: 'Precision nitrogen management in spring rice (Oryza sativa L.) using decision support tools in Chitwan, Nepal',
+        identifier: 'https://doi.org/10.24925/turjaf.v12i6.955-965.6731',
+        url: 'https://doi.org/10.24925/turjaf.v12i6.955-965.6731',
+        datePublished: '2024-06-10',
+        author: [
+            { '@id': PERSON_ID },
+            { '@type': 'Person', name: 'K. R. Pandey' },
+            { '@type': 'Person', name: 'S. Marahatta' },
+            { '@type': 'Person', name: 'M. Dhakal' },
+            { '@type': 'Person', name: 'N. R. Bhusal' },
+            { '@type': 'Person', name: 'R. Thapa' },
+        ],
+        isPartOf: {
+            '@type': 'PublicationIssue',
+            issueNumber: '6',
+            isPartOf: {
+                '@type': ['PublicationVolume', 'Periodical'],
+                volumeNumber: '12',
+                name: 'Turkish Journal of Agriculture-Food Science and Technology',
+            },
+        },
+        pageStart: '955',
+        pageEnd: '965',
+    },
+    {
+        '@type': 'ScholarlyArticle',
+        headline: 'Effects of various fertilizer combinations on okra (Abelmoschus esculentus L.) varieties for dietary fiber content and vegetative characteristic',
+        identifier: 'https://doi.org/10.3126/hijost.v6i1.50658',
+        url: 'https://doi.org/10.3126/hijost.v6i1.50658',
+        datePublished: '2022-12-31',
+        author: [
+            { '@type': 'Person', name: 'B. Regmi' },
+            { '@id': PERSON_ID },
+            { '@type': 'Person', name: 'N. R. Bhusal' },
+            { '@type': 'Person', name: 'S. R. Poudel' },
+            { '@type': 'Person', name: 'S. Kunwar' },
+        ],
+        isPartOf: {
+            '@type': 'PublicationIssue',
+            issueNumber: '1',
+            isPartOf: {
+                '@type': ['PublicationVolume', 'Periodical'],
+                volumeNumber: '6',
+                name: 'Himalayan Journal of Science and Technology',
+            },
+        },
+        pageStart: '75',
+        pageEnd: '86',
+    },
+];
+
+const researchJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [personNode, ...articleNodes],
+};
+
 export default function ResearchPage() {
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(researchJsonLd) }}
+            />
             <section className={styles.hero}>
                 <div className="container">
                     <div className="section-header">
@@ -86,28 +222,28 @@ export default function ResearchPage() {
                     </div>
                     <div className={styles.pubList}>
                         <div className={styles.pubItem}>
-                            <div className={styles.pubType}>Journal Article • 2024</div>
-                            <h4>Precision Nitrogen Management in Spring Rice (Oryza sativa L.) Using Decision Support Tools in Chitwan, Nepal</h4>
-                            <p className={styles.pubMeta}>K Bhattarai, KR Pandey, S Marahatta, M Dhakal, NR Bhusal, R Thapa</p>
-                            <p className={styles.pubMeta}>Turkish Journal of Agriculture-Food Science and Technology, 12(6), 955–965 &bull; Cited: 3</p>
+                            <div className={styles.pubType}>Journal Article • 2025</div>
+                            <h4>Impact of weed management practices on the growth and yield of spring rice in Pyuthan, Nepal</h4>
+                            <p className={styles.pubMeta}>Bhusal, N. R., Pokhrel, M. R., Chaudhary, R., Bhattarai, K., &amp; Timalsina, P. (2025)</p>
+                            <p className={styles.pubMeta}><em>Journal of Agricultural Sciences and Engineering</em>, 7(3), 150–164 &bull; DOI: <a href="https://doi.org/10.48309/jase.2025.502426.1066" target="_blank" rel="noopener noreferrer">https://doi.org/10.48309/jase.2025.502426.1066</a></p>
                         </div>
                         <div className={styles.pubItem}>
                             <div className={styles.pubType}>Journal Article • 2025</div>
-                            <h4>Impact of Weed Management Practices on the Growth and Yield of Spring Rice in Pyuthan, Nepal</h4>
-                            <p className={styles.pubMeta}>NR Bhusal, MR Pokhrel, R Chaudhary, K Bhattarai, P Timalsina</p>
-                            <p className={styles.pubMeta}>Journal of Agricultural Sciences and Engineering, 7(3), 150–164 &bull; Cited: 1</p>
+                            <h4>Effects of ethephon and pruning practices on sex expression and yield of cucumber (Cucumis sativus L.) in Rupandehi, Nepal</h4>
+                            <p className={styles.pubMeta}>Gyawali, K., Dhital, P. R., Bhattarai, K., &amp; Baral, S. (2025)</p>
+                            <p className={styles.pubMeta}><em>Turkish Journal of Agriculture-Food Science and Technology</em>, 13(2), 346–352 &bull; DOI: <a href="https://doi.org/10.24925/turjaf.v13i2.346-352.7179" target="_blank" rel="noopener noreferrer">https://doi.org/10.24925/turjaf.v13i2.346-352.7179</a></p>
+                        </div>
+                        <div className={styles.pubItem}>
+                            <div className={styles.pubType}>Journal Article • 2024</div>
+                            <h4>Precision nitrogen management in spring rice (Oryza sativa L.) using decision support tools in Chitwan, Nepal</h4>
+                            <p className={styles.pubMeta}>Bhattarai, K., Pandey, K. R., Marahatta, S., Dhakal, M., Bhusal, N. R., &amp; Thapa, R. (2024)</p>
+                            <p className={styles.pubMeta}><em>Turkish Journal of Agriculture-Food Science and Technology</em>, 12(6), 955–965 &bull; DOI: <a href="https://doi.org/10.24925/turjaf.v12i6.955-965.6731" target="_blank" rel="noopener noreferrer">https://doi.org/10.24925/turjaf.v12i6.955-965.6731</a></p>
                         </div>
                         <div className={styles.pubItem}>
                             <div className={styles.pubType}>Journal Article • 2022</div>
-                            <h4>Effects of Various Fertilizer Combinations on Okra (Abelmoschus esculentus L.) Varieties for Dietary Fiber Content and Vegetative Characteristic</h4>
-                            <p className={styles.pubMeta}>B Regmi, K Bhattarai, NR Bhusal, SR Poudel, S Kunwar</p>
-                            <p className={styles.pubMeta}>Himalayan Journal of Science and Technology, 6(1), 75–86 &bull; Cited: 1</p>
-                        </div>
-                        <div className={styles.pubItem}>
-                            <div className={styles.pubType}>Journal Article</div>
-                            <h4>Effects of Ethephon and Pruning Practices on Sex Expression and Yield of Cucumber (Cucumis sativus L.) in Rupandehi, Nepal</h4>
-                            <p className={styles.pubMeta}>K Gyawali, PR Dhital, K Bhattarai, S Baral</p>
-                            <p className={styles.pubMeta}>Turkish Journal of Agriculture-Food Science and Technology, 13(2), 346–352</p>
+                            <h4>Effects of various fertilizer combinations on okra (Abelmoschus esculentus L.) varieties for dietary fiber content and vegetative characteristic</h4>
+                            <p className={styles.pubMeta}>Regmi, B., Bhattarai, K., Bhusal, N. R., Poudel, S. R., &amp; Kunwar, S. (2022)</p>
+                            <p className={styles.pubMeta}><em>Himalayan Journal of Science and Technology</em>, 6(1), 75–86 &bull; DOI: <a href="https://doi.org/10.3126/hijost.v6i1.50658" target="_blank" rel="noopener noreferrer">https://doi.org/10.3126/hijost.v6i1.50658</a></p>
                         </div>
                         <div className={styles.pubItem}>
                             <div className={styles.pubType}>Poster Presentation • 2025</div>

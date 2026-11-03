@@ -1,0 +1,27 @@
+# Kapil Bhattarai
+
+> Agricultural Data Scientist and MS researcher at the University of Florida (ABE Department), specializing in crop modeling (DSSAT), geospatial analytics, and machine learning for agriculture. Open to ag-tech data science roles.
+
+## Pages
+
+- [Home](https://bhattaraikapil.com.np/): Overview and introduction.
+- [About](https://bhattaraikapil.com.np/about/): Background, experience, skills, certifications, and academic profiles.
+- [Research & Publications](https://bhattaraikapil.com.np/research/): Research interests, projects, peer-reviewed publications with DOIs, presentations, and code repositories.
+- [Portfolio](https://bhattaraikapil.com.np/portfolio/): Project work and case studies.
+- [Services](https://bhattaraikapil.com.np/services/): Crop modeling & DSSAT, geospatial & remote sensing, ag data science & ML, training & workshops.
+- [Contact](https://bhattaraikapil.com.np/contact/): Contact information.
+
+## Publications
+
+- Bhusal, N. R., Pokhrel, M. R., Chaudhary, R., Bhattarai, K., & Timalsina, P. (2025). Impact of weed management practices on the growth and yield of spring rice in Pyuthan, Nepal. Journal of Agricultural Sciences and Engineering, 7(3), 150–164. https://doi.org/10.48309/jase.2025.502426.1066
+- Gyawali, K., Dhital, P. R., Bhattarai, K., & Baral, S. (2025). Effects of ethephon and pruning practices on sex expression and yield of cucumber (Cucumis sativus L.) in Rupandehi, Nepal. Turkish Journal of Agriculture-Food Science and Technology, 13(2), 346–352. https://doi.org/10.24925/turjaf.v13i2.346-352.7179
+- Bhattarai, K., Pandey, K. R., Marahatta, S., Dhakal, M., Bhusal, N. R., & Thapa, R. (2024). Precision nitrogen management in spring rice (Oryza sativa L.) using decision support tools in Chitwan, Nepal. Turkish Journal of Agriculture-Food Science and Technology, 12(6), 955–965. https://doi.org/10.24925/turjaf.v12i6.955-965.6731
+- Regmi, B., Bhattarai, K., Bhusal, N. R., Poudel, S. R., & Kunwar, S. (2022). Effects of various fertilizer combinations on okra (Abelmoschus esculentus L.) varieties for dietary fiber content and vegetative characteristic. Himalayan Journal of Science and Technology, 6(1), 75–86. https://doi.org/10.3126/hijost.v6i1.50658
+
+## Profiles
+
+- [ORCID](https://orcid.org/0000-0001-5067-1679)
+- [Google Scholar](https://scholar.google.com/citations?user=vqVzA0gAAAAJ&hl=en)
+- [ResearchGate](https://www.researchgate.net/profile/Kapil-Bhattarai-5)
+- [GitHub](https://github.com/kapil-161)
+- [LinkedIn](https://www.linkedin.com/in/kapil-bhattarai-792417192/)

@@ -64,6 +64,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Person',
+              '@id': 'https://bhattaraikapil.com.np/#person',
               name: 'Kapil Bhattarai',
               url: 'https://bhattaraikapil.com.np',
               jobTitle: 'Agricultural Data Scientist',
@@ -73,11 +74,19 @@ export default function RootLayout({ children }) {
                 '@type': 'CollegeOrUniversity',
                 name: 'University of Florida',
               },
+              identifier: {
+                '@type': 'PropertyValue',
+                propertyID: 'ORCID',
+                value: 'https://orcid.org/0000-0001-5067-1679',
+              },
               sameAs: [
                 'https://www.linkedin.com/in/kapil-bhattarai-792417192/',
                 'https://github.com/kapil-161',
                 'https://twitter.com/KD_Bhattarai',
                 'https://www.youtube.com/@AFUStudio',
+                'https://orcid.org/0000-0001-5067-1679',
+                'https://www.researchgate.net/profile/Kapil-Bhattarai-5',
+                'https://scholar.google.com/citations?user=vqVzA0gAAAAJ&hl=en',
               ],
             }),
           }}
