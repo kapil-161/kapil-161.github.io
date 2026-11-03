@@ -225,7 +225,7 @@ export default function ResearchPage() {
                             <div className={styles.pubType}>Journal Article • 2025</div>
                             <h4>Impact of weed management practices on the growth and yield of spring rice in Pyuthan, Nepal</h4>
                             <p className={styles.pubMeta}>Bhusal, N. R., Pokhrel, M. R., Chaudhary, R., Bhattarai, K., &amp; Timalsina, P. (2025)</p>
-                            <p className={styles.pubMeta}><em>Journal of Agricultural Sciences and Engineering</em>, 7(3), 150–164 &bull; DOI: <a href="https://doi.org/10.48309/jase.2025.502426.1066" target="_blank" rel="noopener noreferrer">https://doi.org/10.48309/jase.2025.502426.1066</a></p>
+                            <p className={styles.pubMeta}><em>Journal of Agricultural Sciences and Engineering</em>, 7(3), 150–164 &bull; DOI: <a href="https://doi.org/10.48309/jase.2025.502426.1066" target="_blank" rel="noopener noreferrer">https://doi.org/10.48309/jase.2025.502426.1066</a> &bull; Cited: 1</p>
                         </div>
                         <div className={styles.pubItem}>
                             <div className={styles.pubType}>Journal Article • 2025</div>
