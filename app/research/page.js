@@ -237,7 +237,7 @@ export default function ResearchPage() {
                             <div className={styles.pubType}>Journal Article • 2024</div>
                             <h4>Precision nitrogen management in spring rice (Oryza sativa L.) using decision support tools in Chitwan, Nepal</h4>
                             <p className={styles.pubMeta}>Bhattarai, K., Pandey, K. R., Marahatta, S., Dhakal, M., Bhusal, N. R., &amp; Thapa, R. (2024)</p>
-                            <p className={styles.pubMeta}><em>Turkish Journal of Agriculture-Food Science and Technology</em>, 12(6), 955–965 &bull; DOI: <a href="https://doi.org/10.24925/turjaf.v12i6.955-965.6731" target="_blank" rel="noopener noreferrer">https://doi.org/10.24925/turjaf.v12i6.955-965.6731</a></p>
+                            <p className={styles.pubMeta}><em>Turkish Journal of Agriculture-Food Science and Technology</em>, 12(6), 955–965 &bull; DOI: <a href="https://doi.org/10.24925/turjaf.v12i6.955-965.6731" target="_blank" rel="noopener noreferrer">https://doi.org/10.24925/turjaf.v12i6.955-965.6731</a> &bull; Cited: 5</p>
                         </div>
                         <div className={styles.pubItem}>
                             <div className={styles.pubType}>Journal Article • 2022</div>
