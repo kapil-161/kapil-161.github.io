@@ -273,6 +273,14 @@ export default function ResearchPage() {
                         <div className={styles.timelineItem}>
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
+                                <span className={styles.timelineDate}>August 10-14, 2026</span>
+                                <h4>25th DSSAT Development Sprint — IFDC, Muscle Shoals, Alabama</h4>
+                                <p>Attended in person and presented the lettuce and hydroponics model at the hybrid Sprint, a week of hands-on collaborative work on DSSAT 4.8.6 source code, crop models, datasets, evaluation, and new tools.</p>
+                            </div>
+                        </div>
+                        <div className={styles.timelineItem}>
+                            <div className={styles.timelineDot}></div>
+                            <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>May 18-23, 2026</span>
                                 <h4>Faculty — DSSAT 2026 International Training Program, University of Georgia</h4>
                                 <p>Served as faculty for the 6-day intensive DSSAT International Training Program in Griffin, GA, supporting graduate participants through hands-on sessions on crop simulation modeling, G×E×M interactions, and DSSAT applications.</p>
