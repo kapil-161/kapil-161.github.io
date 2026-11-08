@@ -297,6 +297,14 @@ export default function ResearchPage() {
                         <div className={styles.timelineItem}>
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
+                                <span className={styles.timelineDate}>January 5-9, 2026</span>
+                                <h4>24th DSSAT Development Sprint — University of Florida</h4>
+                                <p>Participated in the hybrid Sprint hosted by the Global Food Systems Institute and the ABE Department, contributing to DSSAT development and community discussions.</p>
+                            </div>
+                        </div>
+                        <div className={styles.timelineItem}>
+                            <div className={styles.timelineDot}></div>
+                            <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>November 16-21, 2025</span>
                                 <h4>Crop Physiology Training — Wageningen University & UF</h4>
                                 <p>Earned 1.5 ECTS credits through a joint program by Wageningen University&apos;s PE&RC and UF&apos;s ABE Department.</p>
