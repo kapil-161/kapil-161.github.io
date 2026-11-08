@@ -16,7 +16,7 @@ export default function ServicesPage() {
                         <span className={styles.badge}>Capabilities</span>
                         <h1>Turning Agricultural Data Into Decisions</h1>
                         <p style={{ color: 'rgba(226, 227, 237, 0.7)', maxWidth: '600px', margin: '0 auto' }}>
-                            The technical skills I bring to agricultural research and ag-tech teams — spanning crop simulation, geospatial analysis, and machine learning.
+                            The technical skills I bring to agricultural research and ag-tech teams, spanning crop simulation, geospatial analysis, and machine learning.
                         </p>
                     </div>
                 </div>

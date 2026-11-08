@@ -18,7 +18,7 @@ export default function HomePage() {
               <span className={styles.heroBadge}>Agricultural Data Scientist • Open to Ag-Tech Roles</span>
               <h1>Turning Field Data Into <span className={styles.heroHighlight}>Actionable Intelligence</span></h1>
               <p className={styles.heroSub}>
-                MS researcher in crop modeling (DSSAT), geospatial analytics, and machine learning — building models that turn field, satellite, and weather data into better crop-management decisions.
+                MS researcher in crop modeling (DSSAT), geospatial analytics, and machine learning, building models that turn field, satellite, and weather data into better crop-management decisions.
               </p>
               <div className={styles.heroBtns}>
                 <Link href="/portfolio" className="btn btn-secondary btn-lg">View My Work</Link>
@@ -131,7 +131,7 @@ export default function HomePage() {
               </div>
               <div className={styles.caseContent}>
                 <h4>Precision Nitrogen Management in Spring Rice</h4>
-                <p>Used SPAD-guided decision support tools to optimize nitrogen application in spring rice in Chitwan, Nepal — cutting applied nitrogen by 33% (120 to 80 kg/ha) with no yield loss.</p>
+                <p>Used SPAD-guided decision support tools to optimize nitrogen application in spring rice in Chitwan, Nepal, cutting applied nitrogen by 33% (120 to 80 kg/ha) with no yield loss.</p>
                 <Link href="/portfolio#nitrogen-management" className={styles.cardLink}>Read Case Study →</Link>
               </div>
             </div>
@@ -152,8 +152,8 @@ export default function HomePage() {
                 <span className={styles.caseBadge}>Machine Learning</span>
               </div>
               <div className={styles.caseContent}>
-                <h4>Rogcheck — Crop Disease Identification App</h4>
-                <p>Android app using CNN and TensorFlow Lite for offline crop disease detection across potato, pepper bell, and tomato — classifying 10 diseases.</p>
+                <h4>Rogcheck: Crop Disease Identification App</h4>
+                <p>Android app using CNN and TensorFlow Lite for offline crop disease detection across potato, pepper bell, and tomato, classifying 10 diseases.</p>
                 <Link href="/portfolio#disease-detection" className={styles.cardLink}>Read Case Study →</Link>
               </div>
             </div>
@@ -172,7 +172,7 @@ export default function HomePage() {
             <div className={styles.impactCard}>
               <span className={styles.impactNumber}>33%</span>
               <span className={styles.impactLabel}>Less nitrogen applied</span>
-              <span className={styles.impactDesc}>SPAD-guided precision nitrogen management cut applied N from 120 to 80 kg/ha in spring rice with no yield loss — first-authored, peer-reviewed study (2024).</span>
+              <span className={styles.impactDesc}>SPAD-guided precision nitrogen management cut applied N from 120 to 80 kg/ha in spring rice with no yield loss (first-authored, peer-reviewed study, 2024).</span>
             </div>
             <div className={styles.impactCard}>
               <span className={styles.impactNumber}>10</span>

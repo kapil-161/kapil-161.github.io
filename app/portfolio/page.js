@@ -17,8 +17,8 @@ const caseStudies = [
         image: '/images/portfolio_item1.webp',
         imageWidth: 800,
         imageHeight: 1126,
-        challenge: 'Rice farmers in Nepal typically apply a blanket nitrogen rate (~120 kg/ha), which drives up input costs and leaves excess nitrogen to run off into the environment — without any guarantee of higher yield.',
-        approach: 'I ran a field experiment in spring rice (Oryza sativa L.) using decision-support tools — a SPAD chlorophyll meter to read the crop’s real nitrogen status and time applications to actual need, rather than a fixed calendar schedule.',
+        challenge: 'Rice farmers in Nepal typically apply a blanket nitrogen rate (~120 kg/ha), which drives up input costs and leaves excess nitrogen to run off into the environment, without any guarantee of higher yield.',
+        approach: 'I ran a field experiment in spring rice (Oryza sativa L.) using decision-support tools, a SPAD chlorophyll meter to read the crop’s real nitrogen status and time applications to actual need, rather than a fixed calendar schedule.',
         result: 'SPAD-guided management cut applied nitrogen by 33% (from 120 to 80 kg/ha) with no loss in grain yield. The work became my first-authored, peer-reviewed paper in the Turkish Journal of Agriculture-Food Science and Technology, 12(6), 955–965.',
         tags: ['SPAD', 'Field Experiments', 'R', 'Precision Ag'],
     },
@@ -31,14 +31,14 @@ const caseStudies = [
         imageWidth: 800,
         imageHeight: 479,
         challenge: 'DSSAT is one of the most widely used crop simulation models in the world, but its legacy tools for viewing simulation output are dated and make it slow for researchers to explore and compare model results.',
-        approach: 'I am contributing to DSSAT v4.8.6 by building GB2, an enhanced graphical visualization tool with a modern interface and faster data processing — written in Python and interfacing with the model’s Fortran output. I developed this work through the 22nd (UF) and 23rd (University of Kentucky) DSSAT Development Sprints.',
+        approach: 'I am contributing to DSSAT v4.8.6 by building GB2, an enhanced graphical visualization tool with a modern interface and faster data processing, written in Python and interfacing with the model’s Fortran output. I developed this work through the 22nd (UF) and 23rd (University of Kentucky) DSSAT Development Sprints.',
         result: 'A more usable visualization workflow contributed back to the open-source DSSAT crop model used by agricultural researchers worldwide. The code is public on GitHub.',
         tags: ['Python', 'DSSAT', 'Data Viz', 'Fortran'],
         repo: 'https://github.com/kapil-161/GB2CPP',
     },
     {
         id: 'disease-detection',
-        title: 'Rogcheck — Crop Disease Identification App',
+        title: 'Rogcheck: Crop Disease Identification App',
         location: 'Android · Offline Machine Learning',
         badge: 'Machine Learning',
         image: '/images/rogcheck_app.webp',
@@ -46,7 +46,7 @@ const caseStudies = [
         imageHeight: 456,
         challenge: 'Smallholder farmers often lack reliable internet and quick access to plant-health experts, so a treatable crop disease can spread before it is ever correctly diagnosed.',
         approach: 'I built an Android app that runs a convolutional neural network (CNN) fully on-device using TensorFlow Lite, so diagnosis works with no internet connection. The model was trained to recognize disease across potato, pepper bell, and tomato leaves.',
-        result: 'Instant, offline diagnosis in the field — classifying 10 disease classes across three crops directly on a farmer’s phone.',
+        result: 'Instant, offline diagnosis in the field, classifying 10 disease classes across three crops directly on a farmer’s phone.',
         tags: ['CNN', 'TFLite', 'Java', 'Android'],
     },
 ];
@@ -93,7 +93,7 @@ export default function PortfolioPage() {
                         <span className={styles.badge}>Work</span>
                         <h1>Projects &amp; Case Studies</h1>
                         <p style={{ color: 'rgba(226, 227, 237, 0.7)', maxWidth: '600px', margin: '0 auto' }}>
-                            Applied tools, apps, analyses, and workshops — the practical side of agricultural data science, with the thinking behind the featured work.
+                            Applied tools, apps, analyses, and workshops: the practical side of agricultural data science, with the thinking behind the featured work.
                         </p>
                     </div>
                 </div>
@@ -104,7 +104,7 @@ export default function PortfolioPage() {
                 <div className="container">
                     <div className="section-header">
                         <h2>Featured Case Studies</h2>
-                        <p>A closer look at three projects — the problem, my approach, and the outcome.</p>
+                        <p>A closer look at three projects: the problem, my approach, and the outcome.</p>
                     </div>
                     <div>
                         {caseStudies.map((cs) => (

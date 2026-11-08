@@ -10,7 +10,7 @@ export default function ContactForm() {
         return (
             <div className={styles.formSuccess} role="status">
                 <h2>Message Sent</h2>
-                <p>Thanks for reaching out — I&apos;ll get back to you within 24-48 hours.</p>
+                <p>Thanks for reaching out. I&apos;ll get back to you within 24-48 hours.</p>
             </div>
         );
     }

@@ -266,7 +266,7 @@ export default function ResearchPage() {
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>November 1-4, 2026</span>
-                                <h4>Poster Presentation — CANVAS 2026 (ASA, CSSA &amp; SSSA), Portland, Oregon</h4>
+                                <h4>Poster Presentation: CANVAS 2026 (ASA, CSSA &amp; SSSA), Portland, Oregon</h4>
                                 <p>Presented poster on &quot;Development and Evaluation of a Process-Based Simulation Model for Lettuce Grown Under Hydroponic Systems.&quot;</p>
                             </div>
                         </div>
@@ -274,7 +274,7 @@ export default function ResearchPage() {
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>August 10-14, 2026</span>
-                                <h4>25th DSSAT Development Sprint — IFDC, Muscle Shoals, Alabama</h4>
+                                <h4>25th DSSAT Development Sprint, IFDC, Muscle Shoals, Alabama</h4>
                                 <p>Attended in person and presented the lettuce and hydroponics model at the hybrid Sprint, a week of hands-on collaborative work on DSSAT 4.8.6 source code, crop models, datasets, evaluation, and new tools.</p>
                             </div>
                         </div>
@@ -282,7 +282,7 @@ export default function ResearchPage() {
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>May 18-23, 2026</span>
-                                <h4>Faculty — DSSAT 2026 International Training Program, University of Georgia</h4>
+                                <h4>Faculty: DSSAT 2026 International Training Program, University of Georgia</h4>
                                 <p>Served as faculty for the 6-day intensive DSSAT International Training Program in Griffin, GA, supporting graduate participants through hands-on sessions on crop simulation modeling, G×E×M interactions, and DSSAT applications.</p>
                             </div>
                         </div>
@@ -290,7 +290,7 @@ export default function ResearchPage() {
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>March 2026</span>
-                                <h4>Poster Presentation — ABE Symposium, University of Florida</h4>
+                                <h4>Poster Presentation: ABE Symposium, University of Florida</h4>
                                 <p>Presented poster on &quot;Development of a Model for Simulating Lettuce Growth and Yield Under Hydroponic Settings.&quot;</p>
                             </div>
                         </div>
@@ -298,7 +298,7 @@ export default function ResearchPage() {
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>January 5-9, 2026</span>
-                                <h4>24th DSSAT Development Sprint — University of Florida</h4>
+                                <h4>24th DSSAT Development Sprint, University of Florida</h4>
                                 <p>Participated in the hybrid Sprint hosted by the Global Food Systems Institute and the ABE Department, contributing to DSSAT development and community discussions.</p>
                             </div>
                         </div>
@@ -306,7 +306,7 @@ export default function ResearchPage() {
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>November 16-21, 2025</span>
-                                <h4>Crop Physiology Training — Wageningen University & UF</h4>
+                                <h4>Crop Physiology Training, Wageningen University & UF</h4>
                                 <p>Earned 1.5 ECTS credits through a joint program by Wageningen University&apos;s PE&RC and UF&apos;s ABE Department.</p>
                             </div>
                         </div>
@@ -314,7 +314,7 @@ export default function ResearchPage() {
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>August 4-8, 2025</span>
-                                <h4>23rd DSSAT Development Sprint — University of Kentucky</h4>
+                                <h4>23rd DSSAT Development Sprint, University of Kentucky</h4>
                                 <p>Virtual participant contributing to DSSAT development and community discussions.</p>
                             </div>
                         </div>
@@ -322,7 +322,7 @@ export default function ResearchPage() {
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>May 19-24, 2025</span>
-                                <h4>DSSAT 2025 International Training Program — University of Georgia</h4>
+                                <h4>DSSAT 2025 International Training Program, University of Georgia</h4>
                                 <p>Completed intensive DSSAT training alongside 72 participants from 28 countries, covering potential production to model applications.</p>
                             </div>
                         </div>
@@ -330,15 +330,15 @@ export default function ResearchPage() {
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>March 13, 2025</span>
-                                <h4>HiPerGator Supercomputer Facility Visit — University of Florida</h4>
-                                <p>Visited UF&apos;s HiPerGator supercomputer facility — a powerful computational resource for agricultural research.</p>
+                                <h4>HiPerGator Supercomputer Facility Visit, University of Florida</h4>
+                                <p>Visited UF&apos;s HiPerGator supercomputer facility, a powerful computational resource for agricultural research.</p>
                             </div>
                         </div>
                         <div className={styles.timelineItem}>
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>March 2025</span>
-                                <h4>Poster Presentation — ABE Symposium, University of Florida</h4>
+                                <h4>Poster Presentation: ABE Symposium, University of Florida</h4>
                                 <p>Presented poster on &quot;Evaluating the Performance of the DSSAT Cropping System Model.&quot;</p>
                             </div>
                         </div>
@@ -346,7 +346,7 @@ export default function ResearchPage() {
                             <div className={styles.timelineDot}></div>
                             <div className={styles.timelineContent}>
                                 <span className={styles.timelineDate}>January 6-10, 2025</span>
-                                <h4>22nd DSSAT Development Sprint — University of Florida</h4>
+                                <h4>22nd DSSAT Development Sprint, University of Florida</h4>
                                 <p>In-person participant engaged in DSSAT model development and collaborative research.</p>
                             </div>
                         </div>

@@ -16,7 +16,7 @@ export default function ContactPage() {
                         <span className={styles.badge}>Get In Touch</span>
                         <h1>Let&apos;s Work Together</h1>
                         <p style={{ color: 'rgba(226, 227, 237, 0.7)', maxWidth: '600px', margin: '0 auto' }}>
-                            Whether you need crop modeling expertise, data analysis, or training — I&apos;d love to hear about your project.
+                            Whether you need crop modeling expertise, data analysis, or training. I&apos;d love to hear about your project.
                         </p>
                     </div>
                 </div>

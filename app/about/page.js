@@ -35,7 +35,7 @@ export default function AboutPage() {
                             </p>
                             <h3>From Nepal to Florida</h3>
                             <p>
-                                My journey began in Nepal, where I developed a deep understanding of agriculture at the ground level — working with farmers, understanding soil, and seeing firsthand the challenges of food production. This foundation shaped my mission: to make agriculture smarter through data.
+                                My journey began in Nepal, where I developed a deep understanding of agriculture at the ground level, working with farmers, understanding soil, and seeing firsthand the challenges of food production. This foundation shaped my mission: to make agriculture smarter through data.
                             </p>
                             <p>
                                 An internship in Israel at Ragolski & Son&apos;s Ltd exposed me to advanced greenhouse operations, hybrid vegetable varieties, cut flower production, and precision growing systems. I saw how technology could transform agricultural productivity at scale.
@@ -64,7 +64,7 @@ export default function AboutPage() {
                             <div className={styles.expHeader}>
                                 <div className={styles.expMeta}>
                                     <h3>Graduate Research Assistant</h3>
-                                    <span className={styles.expCompany}>Dept. of Agricultural &amp; Biological Engineering, University of Florida — Advisor: Dr. Gerrit Hoogenboom</span>
+                                    <span className={styles.expCompany}>Dept. of Agricultural &amp; Biological Engineering, University of Florida, Advisor: Dr. Gerrit Hoogenboom</span>
                                 </div>
                                 <span className={styles.expDate}>Jan 2025 – Present</span>
                             </div>
@@ -79,7 +79,7 @@ export default function AboutPage() {
                             <div className={styles.expHeader}>
                                 <div className={styles.expMeta}>
                                     <h3>Nursery Manager</h3>
-                                    <span className={styles.expCompany}>Plant Paradise — Kadaghari, Kathmandu, Nepal</span>
+                                    <span className={styles.expCompany}>Plant Paradise, Kadaghari, Kathmandu, Nepal</span>
                                 </div>
                                 <span className={styles.expDate}>Mar 2024 – Sep 2024</span>
                             </div>
@@ -96,7 +96,7 @@ export default function AboutPage() {
                             <div className={styles.expHeader}>
                                 <div className={styles.expMeta}>
                                     <h3>Agriculture Intern</h3>
-                                    <span className={styles.expCompany}>Ragolski &amp; Son&apos;s Ltd — Netiv HaAsara, Israel</span>
+                                    <span className={styles.expCompany}>Ragolski &amp; Son&apos;s Ltd, Netiv HaAsara, Israel</span>
                                 </div>
                                 <span className={styles.expDate}>Aug 2022 – Aug 2023</span>
                             </div>
@@ -112,7 +112,7 @@ export default function AboutPage() {
                             <div className={styles.expHeader}>
                                 <div className={styles.expMeta}>
                                     <h3>Agriculture Intern</h3>
-                                    <span className={styles.expCompany}>Prime Minister Agriculture Modernization Project (PMAMP) — Chitwan, Nepal</span>
+                                    <span className={styles.expCompany}>Prime Minister Agriculture Modernization Project (PMAMP), Chitwan, Nepal</span>
                                 </div>
                                 <span className={styles.expDate}>Feb 2022 – Jul 2022</span>
                             </div>

@@ -41,7 +41,7 @@ export const metadata = {
     title: 'Kapil Bhattarai | Agricultural Data Scientist & Crop Modeling Researcher',
     description:
       'Crop modeling (DSSAT), geospatial analytics, and machine learning research in agriculture.',
-    images: [{ url: '/images/og_image.png', width: 1200, height: 630, alt: 'Kapil Bhattarai — Agricultural Data Scientist' }],
+    images: [{ url: '/images/og_image.png', width: 1200, height: 630, alt: 'Kapil Bhattarai: Agricultural Data Scientist' }],
   },
   twitter: {
     card: 'summary_large_image',

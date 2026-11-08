@@ -12,7 +12,7 @@ const blogPosts = [
     {
         slug: '#',
         title: 'My Journey from Nepal to the University of Florida: Lessons in Agricultural Research',
-        excerpt: 'From working with farmers in Chitwan to advanced crop modeling at UF — the experiences that shaped my approach to agricultural data science.',
+        excerpt: 'From working with farmers in Chitwan to advanced crop modeling at UF: the experiences that shaped my approach to agricultural data science.',
         date: 'Coming Soon',
         category: 'Personal / SEO',
         keywords: 'agricultural engineering career',
@@ -39,7 +39,7 @@ const blogPosts = [
     {
         slug: '#',
         title: 'What I Learned at the 23rd DSSAT Development Sprint',
-        excerpt: 'Key takeaways from the 23rd DSSAT Development Sprint at the University of Kentucky — new features, community insights, and the future of crop modeling.',
+        excerpt: 'Key takeaways from the 23rd DSSAT Development Sprint at the University of Kentucky: new features, community insights, and the future of crop modeling.',
         date: 'Coming Soon',
         category: 'Community / SEO',
         keywords: 'DSSAT development sprint',
@@ -75,7 +75,7 @@ const blogPosts = [
     {
         slug: '#',
         title: 'Precision Nitrogen Management: A Data-Driven Approach',
-        excerpt: 'How decision support tools can optimize nitrogen application for rice cultivation — lessons from my research in Chitwan.',
+        excerpt: 'How decision support tools can optimize nitrogen application for rice cultivation: lessons from my research in Chitwan.',
         date: 'Coming Soon',
         category: 'Research / SEO',
         keywords: 'precision nitrogen management',
