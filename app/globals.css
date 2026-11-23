@@ -44,10 +44,10 @@
   --bg-card: #ffffff;
   --bg-dark: #eef0f8;
 
-  --text: #1a1b28;
-  --text-dim: #4a4b65;
+  --text: #000000;
+  --text-dim: #000000;
   --text-faint: #7e7f9a;
-  --text-on-dark: #1a1b28;
+  --text-on-dark: #000000;
 
   --accent: #5567b0;
   --accent-hover: #6c7fc4;
@@ -121,6 +121,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+/* Grayscale smoothing thins glyphs on macOS, making black text look gray */
+[data-theme="light"] body {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 img {
